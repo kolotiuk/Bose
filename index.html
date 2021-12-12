@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bose</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container" style="outline: 1px solid red">
+            <nav class="nav">
+                <a href="" class="header__logo" aria-label="Логотип Bose">
+                    <img src="./images/logo/bose-logo-min.svg" alt="Логотип компании">
+                </a>
+                <button class="burger" type="button" id="navToggle" data-menu-button>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+
+                <ul class="nav__menu" data-menu>
+                    <li class="nav__item"><a class="nav__link" href="">Характеристики</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">История</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Отзывы</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Оплата и доставка</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section hero">
+            <div class="container">
+                <p class="hero__description">
+                    Наушники с шумоподавлением, которые способны на многое
+                </p>
+                <p class="hero__description">
+                    До 20 часов воспроизведения
+                </p>
+                <h1 class="hero__title">Наушники Bose NC 700 </h1>
+                <button class="hero__btn btn" type="button">Заказать</button>
+                <img class="hero__img" src="./images/hero/headphones.jpg" alt="Наушники Bose NC 700" srcset="./images/hero/headphones.jpg,
+                ./images/hero/headphones@2x.jpg 2x">
+            </div>
+        </section>
+        <!-- /.hero -->
+
+
+    </main>
+
+    <script src="./js/burger.js"></script>
+</body>
+
+</html>
