@@ -21,14 +21,14 @@
             transform: translateX(-50%, 50%);
             height: 293px;
             @include bg-img(
-                "../../images/promo/promo-bg768.jpg"
+                "../images/promo/promo-bg768.jpg"
             );
         }
         @media screen and (min-width: 1200px) {
             left: 50%;
             transform: translateX(-50%);
             @include bg-img(
-                "../../images/promo/promo-bg1440.jpg"
+                "../images/promo/promo-bg1440.jpg"
             );
 
             height: 524px;

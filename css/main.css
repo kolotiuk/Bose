@@ -589,7 +589,7 @@ textarea {
   .promo .promo__bg {
     margin-bottom: 32px;
     height: 293px;
-    background-image: url("../../images/promo/promo-bg320.jpg");
+    background-image: url("../images/promo/promo-bg320.jpg");
   }
 }
 
@@ -603,7 +603,7 @@ textarea {
     -webkit-transform: translateX(-50%, 50%);
             transform: translateX(-50%, 50%);
     height: 293px;
-    background-image: url("../../images/promo/promo-bg768.jpg");
+    background-image: url("../images/promo/promo-bg768.jpg");
   }
 }
 
@@ -612,7 +612,7 @@ textarea {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    background-image: url("../../images/promo/promo-bg1440.jpg");
+    background-image: url("../images/promo/promo-bg1440.jpg");
     height: 524px;
   }
 }
