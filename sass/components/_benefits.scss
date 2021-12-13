@@ -1,0 +1,22 @@
+.benefits__list {
+}
+.benefits__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 13px;
+        height: 13px;
+
+        background-color: $orangeColor;
+        border-radius: 50%;
+    }
+}

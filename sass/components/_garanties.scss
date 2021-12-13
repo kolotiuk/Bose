@@ -1,0 +1,24 @@
+.garanties__title {
+    margin-bottom: 56px;
+}
+
+.garanties__item {
+    position: relative;
+    &:first-child {
+        margin-bottom: 61px;
+    }
+    &:last-child {
+        margin-bottom: 32px;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        top: -24px;
+        left: 0;
+        width: 13px;
+        height: 13px;
+
+        background-color: $orangeColor;
+        border-radius: 50%;
+    }
+}

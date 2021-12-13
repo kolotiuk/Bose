@@ -1,13 +1,6 @@
 // Hero
-.hero {
-    padding-top: 20px;
-}
 
 .hero__description {
-    font-size: 14px;
-    line-height: 1.25;
-
-    color: $textColorWhiteRgba;
     &:not(:first-child) {
         margin-top: 16px;
         margin-bottom: 32px;
@@ -23,8 +16,4 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: $titlesColorWhite;
-}
-
-.hero__img {
-    width: 100%;
 }

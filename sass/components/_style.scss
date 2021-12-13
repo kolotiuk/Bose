@@ -31,6 +31,7 @@ a {
 }
 img {
     display: block;
+    width: 100%;
     max-width: 100%;
     height: auto;
 }
@@ -61,8 +62,8 @@ textarea {
         max-width: 768px;
     }
 
-    @media (min-width: 1200px) {
-        max-width: 1200px;
+    @media (min-width: 1320px) {
+        max-width: 1320px;
     }
 }
 
@@ -88,4 +89,30 @@ textarea {
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+.title {
+    margin-bottom: 32px;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $titlesColorWhite;
+}
+
+.subtitle {
+    margin-bottom: 16px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.25;
+    color: $titlesColorWhite;
+}
+
+.text {
+    font-size: 14px;
+    line-height: 1.25;
+    color: $textColorWhiteRgba;
 }

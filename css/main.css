@@ -316,6 +316,7 @@ a {
 
 img {
   display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -354,9 +355,9 @@ textarea {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1320px) {
   .container {
-    max-width: 1200px;
+    max-width: 1320px;
   }
 }
 
@@ -384,6 +385,30 @@ textarea {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.title {
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #e7e7e7;
+}
+
+.subtitle {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.25;
+  color: #e7e7e7;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .header {
@@ -502,16 +527,6 @@ textarea {
   line-height: 1.25;
 }
 
-.hero {
-  padding-top: 20px;
-}
-
-.hero__description {
-  font-size: 14px;
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.8);
-}
-
 .hero__description:not(:first-child) {
   margin-top: 16px;
   margin-bottom: 32px;
@@ -527,7 +542,189 @@ textarea {
   color: #e7e7e7;
 }
 
-.hero__img {
+.design__item {
+  margin-bottom: 24px;
+}
+
+.design__item:last-child {
+  margin-bottom: 32px;
+}
+
+.benefits__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 24px;
+}
+
+.benefits__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.benefits__item:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 13px;
+  height: 13px;
+  background-color: #df3d3a;
+  border-radius: 50%;
+}
+
+.promo {
+  position: relative;
+}
+
+.promo .promo__bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 767px) {
+  .promo .promo__bg {
+    margin-bottom: 32px;
+    height: 293px;
+    background-image: url("../../images/promo/promo-bg320.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .promo .promo__bg {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-size: cover;
+    -webkit-transform: translateX(-50%, 50%);
+            transform: translateX(-50%, 50%);
+    height: 293px;
+    background-image: url("../../images/promo/promo-bg768.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .promo .promo__bg {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background-image: url("../../images/promo/promo-bg1440.jpg");
+    height: 524px;
+  }
+}
+
+@media (min-width: 768px) {
+  .promo__title {
+    margin-bottom: 357px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .promo__title {
+    margin-bottom: 624px;
+  }
+}
+
+.promo__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.features__text {
+  margin-bottom: 32px;
+}
+
+.garanties__title {
+  margin-bottom: 56px;
+}
+
+.garanties__item {
+  position: relative;
+}
+
+.garanties__item:first-child {
+  margin-bottom: 61px;
+}
+
+.garanties__item:last-child {
+  margin-bottom: 32px;
+}
+
+.garanties__item:before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: 0;
+  width: 13px;
+  height: 13px;
+  background-color: #df3d3a;
+  border-radius: 50%;
+}
+
+.history .container {
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .history .container:after {
+    content: "";
+    display: block;
+    width: 116px;
+    height: 82px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../../images/history/history-svg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.history__title {
+  width: 140px;
+}
+
+.history__item {
+  margin-bottom: 32px;
+}
+
+.history__item:last-child .text:not(:first-child) {
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.history__text {
+  margin-bottom: 32px;
+}
+
+.history__quote:last-child {
+  font-size: 14px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.reviews__poster {
   width: 100%;
+  margin-bottom: 32px;
+}
+
+.reviews__subtitle {
+  color: #df3d3a;
+}
+
+.reviews__text {
+  margin-bottom: 32px;
+}
+
+.reviews__item {
+  color: #df3d3a;
+  opacity: .2;
+}
+
+.reviews__item.current {
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */

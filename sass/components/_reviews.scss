@@ -1,0 +1,20 @@
+.reviews__poster {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.reviews__subtitle {
+    color: $orangeColor;
+}
+
+.reviews__text {
+    margin-bottom: 32px;
+}
+
+.reviews__item {
+    color: $orangeColor;
+    opacity: .2;
+    &.current {
+        opacity: 1;
+    }
+}

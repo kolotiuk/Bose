@@ -1,0 +1,39 @@
+.history .container {
+    position: relative;
+    @media (max-width: 767px) {
+        &:after {
+            content: "";
+            display: block;
+            width: 116px;
+            height: 82px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-image: url(../../images/history/history-svg.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
+.history__title {
+    width: 140px;
+}
+
+.history__item {
+    margin-bottom: 32px;
+    &:last-child .text:not(:first-child) {
+        margin-top: 16px;
+        margin-bottom: 32px;
+    }
+}
+
+.history__text {
+    margin-bottom: 32px;
+}
+
+.history__quote:last-child {
+    font-size: 14px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.4);
+}

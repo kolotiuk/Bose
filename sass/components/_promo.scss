@@ -1,0 +1,52 @@
+.promo {
+    position: relative;
+
+    .promo__bg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media (max-width: 767px) {
+            margin-bottom: 32px;
+            height: 293px;
+
+            @include bg-img(
+                "../../images/promo/promo-bg320.jpg"
+            );
+        }
+        @media screen and (min-width: 768px) {
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background-size: cover;
+            transform: translateX(-50%, 50%);
+            height: 293px;
+            @include bg-img(
+                "../../images/promo/promo-bg768.jpg"
+            );
+        }
+        @media screen and (min-width: 1200px) {
+            left: 50%;
+            transform: translateX(-50%);
+            @include bg-img(
+                "../../images/promo/promo-bg1440.jpg"
+            );
+
+            height: 524px;
+        }
+    }
+}
+
+.promo__title {
+    @media (min-width: 768px) {
+        margin-bottom: 357px;
+    }
+    @media (min-width: 1200px) {
+        margin-bottom: 624px;
+    }
+}
+
+.promo__item {
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}

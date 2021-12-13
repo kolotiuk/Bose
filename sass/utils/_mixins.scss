@@ -1,0 +1,14 @@
+@mixin bg-image($background-image) {
+    background-image: url($background-image);
+}
+
+@mixin bg-img($bg1) {
+    @include bg-image($bg1);
+
+    @media (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+    }
+}
