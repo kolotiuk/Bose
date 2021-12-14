@@ -37,17 +37,30 @@
 
     <main class="main">
         <section class="section hero">
-            <div class="container">
-                <p class="hero__description text">
-                    Наушники с шумоподавлением, которые способны на многое
-                </p>
-                <p class="hero__description text">
-                    До 20 часов воспроизведения
-                </p>
-                <h1 class="hero__title">Наушники Bose NC 700 </h1>
-                <button class="hero__btn btn" type="button">Заказать</button>
-                <img class="hero__img" src="./images/hero/headphones.jpg" alt="Наушники Bose NC 700" srcset="./images/hero/headphones.jpg,
-                ./images/hero/headphones@2x.jpg 2x" height="240" width="280">
+            <div class="container hero__flex">
+                <div class="hero__left">
+                    <p class="hero__description text">
+                        Наушники с шумоподавлением, которые способны на многое
+                    </p>
+                    <p class="hero__description text">
+                        До 20 часов <br> воспроизведения
+                    </p>
+                    <h1 class="hero__title">Наушники Bose NC 700 </h1>
+                    <button class="hero__btn btn" type="button">Заказать</button>
+                </div>
+                <div class="hero__right">
+                    <picture>
+                        <source srcset="./images/hero/headphones320.jpg" media="(max-width: 767px)">
+    
+                        <source srcset="./images/hero/headphones1440.jpg" media="(min-width: 1320px)">
+    
+                        <source srcset="./images/hero/headphones768.jpg" media="(min-width: 768px)">
+    
+                        <img src="./images/hero/headphones320.jpg" alt="Наушники Bose NC 700">
+                    </picture>
+                    <!-- <img class="hero__img" src="./images/hero/headphones.jpg" alt="Наушники Bose NC 700" srcset="./images/hero/headphones.jpg,
+                    ./images/hero/headphones@2x.jpg 2x" height="240" width="280"> -->
+                </div>
             </div>
         </section>
         <!-- /.hero -->

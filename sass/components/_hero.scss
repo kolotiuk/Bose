@@ -1,9 +1,43 @@
 // Hero
+.hero {
+    @media (min-width: 768px) {
+        padding-top: 19px;
+        // position: relative;
+    }
+}
+
+.hero__flex {
+    @media (min-width: 768px) {
+        position: relative;
+        display: flex;
+    }
+}
 
 .hero__description {
     &:not(:first-child) {
         margin-top: 16px;
         margin-bottom: 32px;
+    }
+    @media (min-width: 768px) {
+        &:not(:first-child) {
+            margin-bottom: 105px;
+        }
+        max-width: 240px;
+    }
+}
+
+.hero__left {
+    @media (min-width: 768px) {
+        margin-right: 60px;
+        max-width: 294px;
+    }
+}
+
+.hero__right {
+    @media (min-width: 768px) {
+        position: absolute;
+        top: 0;
+        right: -39px;
     }
 }
 
@@ -16,4 +50,8 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: $titlesColorWhite;
+    @media (min-width: 768px) {
+        margin-bottom: 40px;
+        font-size: 42px;
+    }
 }
