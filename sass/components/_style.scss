@@ -14,6 +14,8 @@ body {
     font-family: Gilroy, sans-serif;
     color: $titlesColorWhite;
     background-color: $mainBgColor;
+
+    counter-reset: section; 
 }
 body.modal-open {
     overflow: hidden;
@@ -28,6 +30,10 @@ button {
 a {
     color: inherit;
     text-decoration: none;
+    transition: color 250ms $cubic-bezier;
+    &:hover {
+        color: lighten(white, .9);
+    }
 }
 img {
     display: block;
@@ -115,4 +121,8 @@ textarea {
     font-size: 14px;
     line-height: 1.25;
     color: $textColorWhiteRgba;
+}
+
+.mb32 {
+    margin-bottom: 32px;
 }

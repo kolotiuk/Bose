@@ -1,0 +1,35 @@
+.faq__item {
+    padding-bottom: 24px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+
+summary {
+    display: flex;
+    align-items: baseline;
+    list-style: none;
+    &:before {
+        counter-increment: section;
+        content: "0" counter(section);
+        margin-right: 16px;
+        font-size: 20px;
+        line-height: 70%;
+        color: $titlesColorWhite;
+        font-family: "Roboto Condensed", sans-serif;
+    }
+}
+
+.faq_subtitle {
+    margin-bottom: 0;
+
+    font-size: 14px;
+    line-height: 1.25;
+    color: $textColorWhiteRgba;
+}
+
+.faq__description {
+    margin-top: 16px;
+    padding-left: 35px;
+}

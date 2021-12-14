@@ -1,0 +1,26 @@
+.footer__lists {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 52px;
+}
+
+.footer__list {
+    flex: 0 1 50%;
+}
+
+.footer__item {
+    font-size: 14px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.3);
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+
+.footer__tel {
+    font-size: 16px;
+    line-height: 1.18;
+    font-family: "Roboto Condensed", sans-serif;
+
+    color: rgba(255, 255, 255, 0.8);
+}

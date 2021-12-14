@@ -11,10 +11,23 @@
     margin-bottom: 32px;
 }
 
+.reviews__list {
+    display: flex;
+}
+
 .reviews__item {
+    position: relative;
+    margin-bottom: 0;
+    margin-right: 14px;
+
+    font-family: 'Roboto Condensed', sans-serif;
     color: $orangeColor;
     opacity: .2;
     &.current {
         opacity: 1;
+    }
+    &:not(:last-child):after {
+        content: '-';
+        margin-left: 20px;
     }
 }

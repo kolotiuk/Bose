@@ -1,0 +1,26 @@
+.order__picture {
+    display: inline-block;
+    margin-bottom: 32px;
+}
+
+// .order__buttons {
+//     margin-bottom: 32px;
+// }
+
+.btn__circle {
+    width: 44px;
+    height: 44px;
+    border: 2px solid transparent;
+
+    border-radius: 50%;
+    background-color: #dbdbdb;
+    &:first-child {
+        background-color: #101010;
+    }
+    &:not(:last-child) {
+        margin-right: 24px;
+    }
+    &.active {
+        border: 2px solid #df3d3a;
+    }
+}
