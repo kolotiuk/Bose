@@ -15,7 +15,7 @@ body {
     color: $titlesColorWhite;
     background-color: $mainBgColor;
 
-    counter-reset: section; 
+    counter-reset: section;
 }
 body.modal-open {
     overflow: hidden;
@@ -32,7 +32,7 @@ a {
     text-decoration: none;
     transition: color 250ms $cubic-bezier;
     &:hover {
-        color: lighten(white, .9);
+        color: lighten(white, 0.9);
     }
 }
 img {
@@ -65,10 +65,10 @@ textarea {
     }
 
     @media (min-width: 768px) {
-        max-width: 768px;
+        max-width: 688px;
     }
 
-    @media (min-width: 1320px) {
+    @media (min-width: 1360px) {
         max-width: 1320px;
     }
 }
