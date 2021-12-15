@@ -8,8 +8,9 @@
 
 summary {
     display: flex;
-    align-items: baseline;
+    justify-content: space-between;
     list-style: none;
+    position: relative;
     &:before {
         counter-increment: section;
         content: "0" counter(section);
@@ -19,10 +20,21 @@ summary {
         color: $titlesColorWhite;
         font-family: "Roboto Condensed", sans-serif;
     }
+    &:after {
+        content: "?";
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+    }
 }
 
 .faq_subtitle {
     margin-bottom: 0;
+    width: 70%;
 
     font-size: 14px;
     line-height: 1.25;

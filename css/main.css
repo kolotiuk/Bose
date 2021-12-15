@@ -318,7 +318,7 @@ a {
 }
 
 a:hover {
-  color: white;
+  color: #df3d3a;
 }
 
 img {
@@ -467,6 +467,12 @@ textarea {
   margin-left: auto;
   background: none;
   z-index: 3;
+  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.burger:hover .burger__line {
+  background-color: #df3d3a;
 }
 
 .burger__line {
@@ -475,20 +481,15 @@ textarea {
   height: 2px;
   margin: 5px 0;
   background-color: rgba(255, 255, 255, 0.8);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .burger.is-open .burger__line:nth-child(1) {
   -webkit-transform: rotate(45deg) translate(4px, 6px);
           transform: rotate(45deg) translate(4px, 6px);
-}
-
-.burger .burger__line:nth-child(2) {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .burger.is-open .burger__line:nth-child(2) {
@@ -782,6 +783,22 @@ textarea {
   margin-bottom: 32px;
 }
 
+.history__quote:first-child {
+  position: relative;
+  padding-top: 50px;
+}
+
+.history__quote:first-child:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 34px;
+  height: 25px;
+  background-image: url(../images/history/parentheses-svg.svg);
+}
+
 .history__quote:last-child {
   font-size: 14px;
   line-height: 1.25;
@@ -838,10 +855,11 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   list-style: none;
+  position: relative;
 }
 
 summary:before {
@@ -854,8 +872,26 @@ summary:before {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+summary:after {
+  content: "?";
+  width: 32px;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
 .faq_subtitle {
   margin-bottom: 0;
+  width: 70%;
   font-size: 14px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.8);
@@ -891,9 +927,131 @@ summary:before {
   border: 2px solid #df3d3a;
 }
 
-.connection__picture {
+.order__link {
+  position: relative;
+  display: block;
+  padding-top: 26px;
+  padding-bottom: 25px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.8);
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.order__link:last-child {
+  margin-bottom: 32px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.order__link:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../images/order/arrow-svg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.order__price {
+  margin-bottom: 24px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #df3d3a;
+}
+
+.feedback__picture {
   display: inline-block;
   margin-bottom: 52px;
+}
+
+.feedback__help {
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.feedback__label {
+  position: relative;
+  display: block;
+  margin-bottom: 32px;
+}
+
+.feedback__input,
+.feedback__textarea {
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 1.25;
+  color: white;
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feedback__input:not(:last-child),
+.feedback__textarea:not(:last-child) {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.feedback__input + span,
+.feedback__textarea + span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.3);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feedback__input:focus,
+.feedback__textarea:focus {
+  border-color: red;
+}
+
+.feedback__input:focus + span,
+.feedback__textarea:focus + span {
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+  color: #df3d3a;
+}
+
+.feedback__input:hover,
+.feedback__textarea:hover {
+  border-color: #df3d3a;
+}
+
+.feedback__input:hover + span,
+.feedback__textarea:hover + span {
+  color: #df3d3a;
+}
+
+.feedback__input {
+  padding-bottom: 35px;
+}
+
+.feedback__input:focus {
+  border-color: red;
+}
+
+.feedback__textarea {
+  padding-bottom: 60px;
+  resize: none;
 }
 
 .footer__lists {

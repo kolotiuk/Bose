@@ -32,8 +32,24 @@
     margin-bottom: 32px;
 }
 
-.history__quote:last-child {
-    font-size: 14px;
-    line-height: 1.25;
-    color: rgba(255, 255, 255, 0.4);
+.history__quote {
+    &:first-child {
+        position: relative;
+        padding-top: 50px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 34px;
+            height: 25px;
+            background-image: url(../images/history/parentheses-svg.svg);
+        }
+    }
+    &:last-child {
+        font-size: 14px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.4);
+    }
 }

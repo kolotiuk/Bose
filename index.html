@@ -51,15 +51,13 @@
                 <div class="hero__right">
                     <picture>
                         <source srcset="./images/hero/headphones320.jpg" media="(max-width: 767px)">
-    
+
                         <source srcset="./images/hero/headphones1440.jpg" media="(min-width: 1320px)">
-    
+
                         <source srcset="./images/hero/headphones768.jpg" media="(min-width: 768px)">
-    
+
                         <img src="./images/hero/headphones320.jpg" alt="Наушники Bose NC 700">
                     </picture>
-                    <!-- <img class="hero__img" src="./images/hero/headphones.jpg" alt="Наушники Bose NC 700" srcset="./images/hero/headphones.jpg,
-                    ./images/hero/headphones@2x.jpg 2x" height="240" width="280"> -->
                 </div>
             </div>
         </section>
@@ -406,33 +404,58 @@
 
                     <img src="./images/order/order-img1-320.jpg" alt="Наушники" width="280" height="265">
                 </picture>
-                <div class="order__buttons mb32">
+                <form action="#" class="order__form">
+                    <label for="" class="order__specifications">
+                        <a href="" class="order__link">Наличие в магазинах</a>
+                        <a href="" class="order__link">Характеристики</a>
+                        <a href="" class="order__link">Способы оплаты и доставки</a>
+                    </label>
+                    <label for="" class="order__price" lang="en">14 999 UAH</label>
+                    <button class="btn">Заказать</button>
+                </form>
+                <!-- <div class="order__buttons mb32">
                     <button class="btn__circle active"></button>
                     <button class="btn__circle"></button>
-                </div>
+                </div> -->
             </div>
         </section>
         <!-- /.section order -->
 
-        <section class="section connection">
+        <section class="section feedback">
             <div class="container">
-                <picture class="connection__picture">
-                    <source srcset="./images/connection/connection-img320.jpg" media="(max-width: 767px)">
+                <picture class="feedback__picture">
+                    <source srcset="./images/feedback/feedback-img320.jpg" media="(max-width: 767px)">
 
-                    <source srcset="./images/connection/connection-img1440.jpg" media="(min-width: 1320px)">
+                    <source srcset="./images/feedback/feedback-img1440.jpg" media="(min-width: 1320px)">
 
-                    <source srcset="./images/connection/connection-img768.jpg" media="(min-width: 768px)">
+                    <source srcset="./images/feedback/feedback-img768.jpg" media="(min-width: 768px)">
 
-                    <img src="./images/connection/connection-img320.jpg" alt="Девушка в наушниках" width="280"
-                        height="235">
+                    <img src="./images/feedback/feedback-img320.jpg" alt="Девушка в наушниках" width="280" height="235">
                 </picture>
                 <h2 class="title">обратная связь</h2>
-                <p class="connection__help">
+                <p class="feedback__help">
                     Мы поможем подобрать вам подходящие наушники
                 </p>
+                <form class="feedback__form">
+                    <label for="" class="feedback__label">
+                        <input type="text" class="feedback__input" type="name" placeholder=" ">
+                        <span>Ваше имя</span>
+                    </label>
+                    <label for="" class="feedback__label">
+                        <input type="email" class="feedback__input" type="email" placeholder=" ">
+                        <span>Ваш e-mail</span>
+                    </label>
+                    <label for="" class="feedback__label">
+                        <textarea class="feedback__textarea" name="message" id=""></textarea>
+                        <span>Напишите нам сообщение</span>
+                    </label>
+                    <label for="" class="feedback__label feedback__checkbox">
+
+                    </label>
+                </form>
             </div>
         </section>
-        <!-- /.section connection -->
+        <!-- /.section feedback -->
     </main>
     <!-- /.main -->
 

@@ -3,10 +3,6 @@
     margin-bottom: 32px;
 }
 
-// .order__buttons {
-//     margin-bottom: 32px;
-// }
-
 .btn__circle {
     width: 44px;
     height: 44px;
@@ -23,4 +19,47 @@
     &.active {
         border: 2px solid #df3d3a;
     }
+}
+
+.order__link {
+    position: relative;
+    display: block;
+    padding-top: 26px;
+    padding-bottom: 25px;
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: rgba(255, 255, 255, 0.8);
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+
+    &:last-child {
+        margin-bottom: 32px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../../images/order/arrow-svg.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+.order__price {
+    margin-bottom: 24px;
+    display: inline-block;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $orangeColor;
 }
