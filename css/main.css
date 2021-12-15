@@ -1084,6 +1084,7 @@ summary:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 40px;
   font-size: 14px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.8);
@@ -1098,8 +1099,8 @@ summary:after {
   display: inline-block;
   width: 30px;
   height: 30px;
+  margin-right: 24px;
   border: 2px solid white;
-  margin-right: 29px;
 }
 
 .feedback__check svg {
@@ -1114,6 +1115,10 @@ summary:after {
 
 .feedback__accept:checked + .feedback__check svg {
   stroke: #df3d3a;
+}
+
+.feedback__btn {
+  background-color: transparent;
 }
 
 .footer__lists {
