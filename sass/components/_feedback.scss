@@ -71,5 +71,35 @@
     padding-bottom: 60px;
     resize: none;
 }
-// .feedback__input {
-// }
+
+.feedback__checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.8);
+    a {
+        text-decoration: underline;
+    }
+}
+
+.feedback__check {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    margin-right: 29px;
+    svg {
+        position: absolute;
+        top: -5px;
+        left: 4px;
+        fill: transparent;
+        stroke: transparent;
+        transition: stroke 250ms linear;
+    }
+}
+
+.feedback__accept:checked + .feedback__check svg {
+    stroke: #df3d3a;
+}

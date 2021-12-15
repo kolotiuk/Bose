@@ -31,7 +31,8 @@ a {
     color: inherit;
     text-decoration: none;
     transition: color 250ms $cubic-bezier;
-    &:hover {
+    &:hover,
+    &:focus {
         color: $orangeColor;
     }
 }
@@ -82,15 +83,24 @@ textarea {
     min-width: 280px;
     height: 58px;
     padding: 20px;
-    margin-bottom: 32px;
 
     font-weight: 600;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.02em;
     text-transform: uppercase;
+    border: 1px solid $orangeColor;
     color: $textColorWhiteRgba;
     background-color: $orangeColor;
+
+    transition: background-color 250ms $cubic-bezier, border 250ms $cubic-bezier,
+        color 250ms $cubic-bezier;
+    &:hover,
+    &:focus {
+        background-color: transparent;
+        border: 1px solid $textColorWhiteRgba;
+        color: $orangeColor;
+    }
     @media (min-width: 768px) {
         min-width: 294px;
         margin-bottom: 0;
@@ -129,4 +139,15 @@ textarea {
 
 .mb32 {
     margin-bottom: 32px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
 }

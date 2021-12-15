@@ -317,7 +317,7 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-a:hover {
+a:hover, a:focus {
   color: #df3d3a;
 }
 
@@ -377,14 +377,22 @@ textarea {
   min-width: 280px;
   height: 58px;
   padding: 20px;
-  margin-bottom: 32px;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+  border: 1px solid #df3d3a;
   color: rgba(255, 255, 255, 0.8);
   background-color: #df3d3a;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover, .btn:focus {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: #df3d3a;
 }
 
 @media (min-width: 768px) {
@@ -427,6 +435,17 @@ textarea {
 
 .mb32 {
   margin-bottom: 32px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .header {
@@ -623,6 +642,10 @@ textarea {
     margin-bottom: 40px;
     font-size: 42px;
   }
+}
+
+.hero__btn {
+  margin-bottom: 32px;
 }
 
 .design__item {
@@ -1052,6 +1075,45 @@ summary:after {
 .feedback__textarea {
   padding-bottom: 60px;
   resize: none;
+}
+
+.feedback__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.feedback__checkbox a {
+  text-decoration: underline;
+}
+
+.feedback__check {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  margin-right: 29px;
+}
+
+.feedback__check svg {
+  position: absolute;
+  top: -5px;
+  left: 4px;
+  fill: transparent;
+  stroke: transparent;
+  -webkit-transition: stroke 250ms linear;
+  transition: stroke 250ms linear;
+}
+
+.feedback__accept:checked + .feedback__check svg {
+  stroke: #df3d3a;
 }
 
 .footer__lists {
