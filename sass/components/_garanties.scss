@@ -1,5 +1,33 @@
+.garanties__container--flex {
+    @media (min-width: 768px) {
+        display: flex;
+        position: relative;
+        justify-content: flex-end;
+    }
+}
+
+.garanties__content {
+    @media (min-width: 768px) {
+        flex-basis: 50%;
+        order: 1;
+        padding-left: 24px;
+    }
+}
+
+
+.garanties__image {
+    @media (min-width: 768px) {
+        position: absolute;
+        top: 0;
+        left: -40px;
+    }
+}
+
 .garanties__title {
     margin-bottom: 56px;
+    @media (min-width: 768px) {
+        margin-bottom: 80px;
+    }
 }
 
 .garanties__item {

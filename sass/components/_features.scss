@@ -1,3 +1,25 @@
+.features__container--flex {
+    @media (min-width: 768px) {
+        display: flex;
+        position: relative;
+    }
+}
+
+.features__content {
+    @media (min-width: 768px) {
+        flex-basis: 50%;
+        padding-right: 47px;
+    }
+}
+
+.features__image {
+    @media (min-width: 768px) {
+        position: absolute;
+        top: 0;
+        right: -40px;
+    }
+}
+
 .features__text {
     margin-bottom: 32px;
 }

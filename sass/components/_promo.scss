@@ -14,11 +14,10 @@
         }
         @media screen and (min-width: 768px) {
             position: absolute;
-            top: 60px;
+            top: 110px;
             left: 0;
             width: 100%;
             background-size: cover;
-            transform: translateX(-50%, 50%);
             height: 293px;
             @include bg-img(
                 "../images/promo/promo-bg768.jpg"
@@ -39,6 +38,7 @@
 .promo__title {
     @media (min-width: 768px) {
         margin-bottom: 357px;
+        text-align: right;
     }
     @media (min-width: 1200px) {
         margin-bottom: 624px;
@@ -48,5 +48,18 @@
 .promo__item {
     &:not(:last-child) {
         margin-bottom: 24px;
+    }
+}
+
+.promo__list {
+    @media (min-width: 768px) {
+        display: flex;
+        margin: 0 -30px;
+    }
+}
+
+.promo__item {
+    @media (min-width: 768px) {
+        margin: 0 30px;
     }
 }

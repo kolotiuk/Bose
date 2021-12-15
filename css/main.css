@@ -635,7 +635,7 @@ textarea {
   .hero__right {
     position: absolute;
     top: 0;
-    right: -31px;
+    right: -40px;
   }
 }
 
@@ -746,12 +746,10 @@ textarea {
 @media screen and (min-width: 768px) {
   .promo .promo__bg {
     position: absolute;
-    top: 60px;
+    top: 110px;
     left: 0;
     width: 100%;
     background-size: cover;
-    -webkit-transform: translateX(-50%, 50%);
-            transform: translateX(-50%, 50%);
     height: 293px;
     background-image: url("../images/promo/promo-bg768.jpg");
   }
@@ -770,6 +768,7 @@ textarea {
 @media (min-width: 768px) {
   .promo__title {
     margin-bottom: 357px;
+    text-align: right;
   }
 }
 
@@ -783,12 +782,89 @@ textarea {
   margin-bottom: 24px;
 }
 
+@media (min-width: 768px) {
+  .promo__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 -30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .promo__item {
+    margin: 0 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .features__container--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+}
+
+@media (min-width: 768px) {
+  .features__content {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding-right: 47px;
+  }
+}
+
+@media (min-width: 768px) {
+  .features__image {
+    position: absolute;
+    top: 0;
+    right: -40px;
+  }
+}
+
 .features__text {
   margin-bottom: 32px;
 }
 
+@media (min-width: 768px) {
+  .garanties__container--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media (min-width: 768px) {
+  .garanties__content {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding-left: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .garanties__image {
+    position: absolute;
+    top: 0;
+    left: -40px;
+  }
+}
+
 .garanties__title {
   margin-bottom: 56px;
+}
+
+@media (min-width: 768px) {
+  .garanties__title {
+    margin-bottom: 80px;
+  }
 }
 
 .garanties__item {
