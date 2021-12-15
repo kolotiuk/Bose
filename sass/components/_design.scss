@@ -1,3 +1,26 @@
+.design__container--flex {
+    @media (min-width: 768px) {
+        display: flex;
+        position: relative;
+        justify-content: flex-end;
+    }
+}
+
+.design__content {
+    @media (min-width: 768px) {
+        flex-basis: 50%;
+        order: 1;
+        padding-left: 40px;
+    }
+}
+
+.design__image {
+    @media (min-width: 768px) {
+        position: absolute;
+        left: -40px;
+    }
+}
+
 .design__item {
     margin-bottom: 24px;
     &:last-child {

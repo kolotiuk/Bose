@@ -14,7 +14,7 @@
 
 <body>
     <header class="header">
-        <div class="container" style="outline: 1px solid red">
+        <div class="container">
             <nav class="nav">
                 <a href="" class="header__logo" aria-label="Логотип Bose">
                     <img src="./images/logo/bose-logo-min.svg" alt="Логотип компании">
@@ -64,35 +64,39 @@
         <!-- /.hero -->
 
         <section class="section design">
-            <div class="container">
-                <h2 class="title">Премиальный дизайн и комфорт</h2>
-                <ul class="design__list">
-                    <li class="design__item">
-                        <div class="subtitle">11 уровней шумоподавления</div>
-                        <div class="design__text text">С новыми наушниками Bose Noise Cancelling Headphone 700 можно
-                            плавно увеличить
-                            или уменьшить уровень шумоподавления. Вас слышно отлично
-                            и вы слышите собеседника четко, даже в шумной обстановке!
-                        </div>
-                    </li>
-                    <li class="design__item">
-                        <div class="subtitle">Комфорт на максимум</div>
-                        <div class="design__text text">
-                            Стильная, легкая дужка из нержавеющей стали с мягкими, расположенными под углом чашками
-                            наушников для комфортной посадки. Внутренняя сторона выполнена из мягкой гелевой подкладки,
-                            которая хорошо прилегает к голове.
-                        </div>
-                    </li>
-                </ul>
-                <picture>
-                    <source srcset="./images/design/design-img320.jpg" media="(max-width: 767px)">
-
-                    <source srcset="./images/design/design-img1440.jpg" media="(min-width: 1320px)">
-
-                    <source srcset="./images/design/design-img768.jpg" media="(min-width: 768px)">
-
-                    <img src="./images/design/design-img320.jpg" alt="Девушка в наушниках" height="293" width="280">
-                </picture>
+            <div class="container design__container--flex">
+                <div class="design__content">
+                    <h2 class="title">Премиальный дизайн и комфорт</h2>
+                    <ul class="design__list">
+                        <li class="design__item">
+                            <div class="subtitle">11 уровней шумоподавления</div>
+                            <div class="design__text text">С новыми наушниками Bose Noise Cancelling Headphone 700 можно
+                                плавно увеличить
+                                или уменьшить уровень шумоподавления. Вас слышно отлично
+                                и вы слышите собеседника четко, даже в шумной обстановке!
+                            </div>
+                        </li>
+                        <li class="design__item">
+                            <div class="subtitle">Комфорт на максимум</div>
+                            <div class="design__text text">
+                                Стильная, легкая дужка из нержавеющей стали с мягкими, расположенными под углом чашками
+                                наушников для комфортной посадки. Внутренняя сторона выполнена из мягкой гелевой подкладки,
+                                которая хорошо прилегает к голове.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="design__image">
+                    <picture>
+                        <source srcset="./images/design/design-img320.jpg" media="(max-width: 767px)">
+    
+                        <source srcset="./images/design/design-img1440.jpg" media="(min-width: 1320px)">
+    
+                        <source srcset="./images/design/design-img768.jpg" media="(min-width: 768px)">
+    
+                        <img src="./images/design/design-img320.jpg" alt="Девушка в наушниках" height="293" width="280">
+                    </picture>
+                </div>
             </div>
         </section>
         <!-- /.section design -->

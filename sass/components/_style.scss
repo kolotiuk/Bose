@@ -76,6 +76,9 @@ textarea {
 
 .section {
     padding-bottom: 52px;
+    @media (min-width: 768px) {
+        padding: 50px 0 50px;
+    }
 }
 
 .btn {
@@ -116,6 +119,10 @@ textarea {
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: $titlesColorWhite;
+
+    @media (min-width: 768px) {
+        font-size: 30px;
+    }
 }
 
 .subtitle {

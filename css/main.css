@@ -372,6 +372,12 @@ textarea {
   padding-bottom: 52px;
 }
 
+@media (min-width: 768px) {
+  .section {
+    padding: 50px 0 50px;
+  }
+}
+
 .btn {
   display: block;
   min-width: 280px;
@@ -410,6 +416,12 @@ textarea {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #e7e7e7;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
 }
 
 .subtitle {
@@ -623,7 +635,7 @@ textarea {
   .hero__right {
     position: absolute;
     top: 0;
-    right: -39px;
+    right: -31px;
   }
 }
 
@@ -644,8 +656,40 @@ textarea {
   }
 }
 
-.hero__btn {
-  margin-bottom: 32px;
+@media (max-width: 767px) {
+  .hero__btn {
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .design__container--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media (min-width: 768px) {
+  .design__content {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .design__image {
+    position: absolute;
+    left: -40px;
+  }
 }
 
 .design__item {
