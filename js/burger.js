@@ -14,3 +14,8 @@
     });
 })();
 
+// window.onload = function () {
+//     var b1 = document.getElementById("b1"); //блок перед которым ставим
+//     var b2 = document.getElementById("b2"); //блок который передвигаем
+//     b1.parentNode.insertBefore(b2, b1);
+// };

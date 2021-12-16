@@ -29,16 +29,26 @@ summary {
         align-items: center;
         background-color: rgba(255, 255, 255, 0.1);
         border-radius: 50%;
+
+        @media (min-width: 768px) {
+            margin-left: auto;
+        }
+    }
+
+    @media (min-width: 768px) {
+        justify-content: flex-start;
     }
 }
 
 .faq_subtitle {
     margin-bottom: 0;
-    width: 70%;
 
     font-size: 14px;
     line-height: 1.25;
     color: $textColorWhiteRgba;
+    @media (max-width: 767px) {
+        width: 70%;
+    }
 }
 
 .faq__description {

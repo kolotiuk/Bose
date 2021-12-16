@@ -909,6 +909,40 @@ textarea {
   }
 }
 
+.history__wrapper {
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .history__wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .history__content {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .history__content {
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .history__image {
+    position: absolute;
+    top: 0;
+    right: -60px;
+  }
+}
+
 .history__title {
   width: 140px;
 }
@@ -926,13 +960,44 @@ textarea {
   margin-bottom: 32px;
 }
 
+@media (min-width: 768px) {
+  .history__text {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .history__text--before {
+    display: none;
+  }
+}
+
+.history__wrapper--below .text:last-of-type {
+  margin-bottom: 32px;
+}
+
+.history__text--after {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .history__text--after {
+    display: none;
+  }
+}
+
+.history__picture {
+  display: inline-block;
+  margin-bottom: 32px;
+}
+
 .history__quote:first-child {
   position: relative;
   padding-top: 50px;
 }
 
 .history__quote:first-child:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1032,12 +1097,31 @@ summary:after {
   border-radius: 50%;
 }
 
+@media (min-width: 768px) {
+  summary:after {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  summary {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 .faq_subtitle {
   margin-bottom: 0;
-  width: 70%;
   font-size: 14px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 767px) {
+  .faq_subtitle {
+    width: 70%;
+  }
 }
 
 .faq__description {
@@ -1086,6 +1170,12 @@ summary:after {
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
+@media (min-width: 768px) {
+  .order__link:last-child {
+    margin-bottom: 52px;
+  }
+}
+
 .order__link:after {
   content: "";
   position: absolute;
@@ -1113,9 +1203,22 @@ summary:after {
   color: #df3d3a;
 }
 
+@media (min-width: 768px) {
+  .order__price {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
+}
+
 .feedback__picture {
   display: inline-block;
   margin-bottom: 52px;
+}
+
+@media (min-width: 768px) {
+  .feedback__picture {
+    margin-bottom: 100px;
+  }
 }
 
 .feedback__help {
@@ -1125,10 +1228,22 @@ summary:after {
   color: rgba(255, 255, 255, 0.8);
 }
 
+@media (min-width: 768px) {
+  .feedback__help {
+    margin-bottom: 52px;
+  }
+}
+
 .feedback__label {
   position: relative;
   display: block;
   margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .feedback__label:nth-last-child(3) {
+    margin-bottom: 40px;
+  }
 }
 
 .feedback__input,
@@ -1185,7 +1300,7 @@ summary:after {
 }
 
 .feedback__input {
-  padding-bottom: 35px;
+  padding-bottom: 15px;
 }
 
 .feedback__input:focus {
@@ -1212,6 +1327,12 @@ summary:after {
 
 .feedback__checkbox a {
   text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .feedback__checkbox {
+    margin-bottom: 52px;
+  }
 }
 
 .feedback__check {
@@ -1247,13 +1368,34 @@ summary:after {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 52px;
+}
+
+@media (min-width: 768px) {
+  .footer__lists {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }
 
 .footer__list {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
+}
+
+@media (max-width: 767px) {
+  .footer__list:first-child {
+    margin-bottom: 52px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__list {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 33.333%;
+            flex: 0 1 33.333%;
+  }
 }
 
 .footer__item {
@@ -1267,9 +1409,16 @@ summary:after {
 }
 
 .footer__tel {
+  display: block;
   font-size: 16px;
   line-height: 1.18;
   font-family: "Roboto Condensed", sans-serif;
   color: rgba(255, 255, 255, 0.8);
+}
+
+@media (min-width: 768px) {
+  .footer__tel {
+    margin-left: auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */

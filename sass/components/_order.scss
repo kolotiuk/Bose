@@ -35,6 +35,10 @@
     &:last-child {
         margin-bottom: 32px;
         border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+
+        @media (min-width: 768px) {
+            margin-bottom: 52px;
+        }
     }
     &:after {
         content: "";
@@ -62,4 +66,9 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: $orangeColor;
+
+    @media (min-width: 768px) {
+        font-size: 30px;
+        margin-bottom: 32px;
+    }
 }
