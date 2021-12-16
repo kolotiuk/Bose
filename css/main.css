@@ -378,6 +378,12 @@ textarea {
   }
 }
 
+@media (min-width: 1360px) {
+  .section {
+    padding: 85px 0 85px;
+  }
+}
+
 .btn {
   display: block;
   min-width: 280px;
