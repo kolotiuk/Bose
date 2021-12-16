@@ -414,6 +414,15 @@ textarea {
   }
 }
 
+@media (min-width: 1360px) {
+  .btn {
+    min-width: 290px;
+    height: 68px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
 .title {
   margin-bottom: 32px;
   font-weight: 600;
@@ -657,23 +666,36 @@ textarea {
   }
 }
 
+.hero__description {
+  max-width: 240px;
+}
+
 .hero__description:not(:first-child) {
   margin-top: 16px;
   margin-bottom: 32px;
 }
 
 @media (min-width: 768px) {
-  .hero__description {
-    max-width: 240px;
-  }
   .hero__description:not(:first-child) {
     margin-bottom: 105px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .hero__description:not(:first-child) {
+    margin-top: 36px;
+    margin-bottom: 110px;
   }
 }
 
 @media (min-width: 768px) {
   .hero__left {
     margin-right: 60px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .hero__left {
     max-width: 294px;
   }
 }
@@ -683,6 +705,13 @@ textarea {
     position: absolute;
     top: 0;
     right: -40px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .hero__title--wrap {
+    max-width: 470px;
+    margin-left: 104px;
   }
 }
 
@@ -700,6 +729,14 @@ textarea {
   .hero__title {
     margin-bottom: 40px;
     font-size: 42px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .hero__title {
+    margin-bottom: 81px;
+    font-size: 74px;
+    line-height: 1;
   }
 }
 

@@ -111,6 +111,14 @@ textarea {
         min-width: 294px;
         margin-bottom: 0;
     }
+
+    @media (min-width: 1360px) {
+        min-width: 290px;
+        height: 68px;
+
+        font-size: 20px;
+        line-height: 1.2;
+    }
 }
 
 .title {
