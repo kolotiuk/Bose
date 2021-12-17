@@ -948,9 +948,27 @@ textarea {
   }
 }
 
+@media (min-width: 1360px) {
+  .promo__list {
+    margin: 0 -20px;
+  }
+}
+
 @media (min-width: 768px) {
   .promo__item {
     margin: 0 30px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .promo__item {
+    margin: 0 20px;
+  }
+  .promo__item:first-child {
+    padding-left: 110px;
+  }
+  .promo__item:last-child {
+    padding-right: 110px;
   }
 }
 
@@ -963,6 +981,14 @@ textarea {
   }
 }
 
+@media (min-width: 1360px) {
+  .features__container--flex {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
 @media (min-width: 768px) {
   .features__content {
     -ms-flex-preferred-size: 50%;
@@ -971,11 +997,25 @@ textarea {
   }
 }
 
+@media (min-width: 1360px) {
+  .features__content {
+    max-width: 380px;
+    margin-left: 110px;
+    margin-right: 90px;
+  }
+}
+
 @media (min-width: 768px) {
   .features__image {
     position: absolute;
     top: 0;
     right: -40px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .features__image {
+    position: relative;
   }
 }
 

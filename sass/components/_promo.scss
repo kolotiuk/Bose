@@ -58,10 +58,25 @@
         display: flex;
         margin: 0 -30px;
     }
+
+    @media (min-width: 1360px) {
+        margin: 0 -20px;
+    }
 }
 
 .promo__item {
     @media (min-width: 768px) {
         margin: 0 30px;
+    }
+
+    @media (min-width: 1360px) {
+        margin: 0 20px;
+
+        &:first-child {
+            padding-left: 110px;
+        }
+        &:last-child {
+            padding-right: 110px;
+        }
     }
 }
