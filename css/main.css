@@ -885,21 +885,21 @@ textarea {
   position: relative;
 }
 
-.promo .promo__bg {
+.promo__bg {
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 @media (max-width: 767px) {
-  .promo .promo__bg {
+  .promo__bg {
     margin-bottom: 32px;
     height: 293px;
     background-image: url("../images/promo/promo-bg320.jpg");
   }
 }
 
-@media screen and (min-width: 768px) {
-  .promo .promo__bg {
+@media (min-width: 768px) {
+  .promo__bg {
     position: absolute;
     top: 110px;
     left: 0;
@@ -910,11 +910,13 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .promo .promo__bg {
+@media (min-width: 1360px) {
+  .promo__bg {
+    top: 185px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+    width: 100%;
     background-image: url("../images/promo/promo-bg1440.jpg");
     height: 524px;
   }
@@ -927,7 +929,7 @@ textarea {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1360px) {
   .promo__title {
     margin-bottom: 624px;
   }

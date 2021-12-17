@@ -1,7 +1,7 @@
 .promo {
     position: relative;
 
-    .promo__bg {
+    &__bg {
         background-repeat: no-repeat;
         background-size: cover;
         @media (max-width: 767px) {
@@ -12,7 +12,7 @@
                 "../images/promo/promo-bg320.jpg"
             );
         }
-        @media screen and (min-width: 768px) {
+        @media (min-width: 768px) {
             position: absolute;
             top: 110px;
             left: 0;
@@ -23,9 +23,11 @@
                 "../images/promo/promo-bg768.jpg"
             );
         }
-        @media screen and (min-width: 1200px) {
+        @media (min-width: 1360px) {
+            top: 185px;
             left: 50%;
             transform: translateX(-50%);
+            width: 100%;
             @include bg-img(
                 "../images/promo/promo-bg1440.jpg"
             );
@@ -40,7 +42,7 @@
         margin-bottom: 357px;
         text-align: right;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 1360px) {
         margin-bottom: 624px;
     }
 }
