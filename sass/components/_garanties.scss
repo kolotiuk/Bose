@@ -4,6 +4,11 @@
         position: relative;
         justify-content: flex-end;
     }
+
+    @media (min-width: 1360px) {
+        max-width: 1360px;
+        justify-content: flex-start;
+    }
 }
 
 .garanties__content {
@@ -12,14 +17,23 @@
         order: 1;
         padding-left: 24px;
     }
-}
 
+    @media (min-width: 1360px) {
+        padding-left: 0;
+        margin-left: 40px;
+        max-width: 400px;
+    }
+}
 
 .garanties__image {
     @media (min-width: 768px) {
         position: absolute;
         top: 0;
         left: -40px;
+    }
+
+    @media (min-width: 1360px) {
+        position: relative;
     }
 }
 

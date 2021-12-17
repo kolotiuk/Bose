@@ -1035,6 +1035,15 @@ textarea {
   }
 }
 
+@media (min-width: 1360px) {
+  .garanties__container--flex {
+    max-width: 1360px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 @media (min-width: 768px) {
   .garanties__content {
     -ms-flex-preferred-size: 50%;
@@ -1046,11 +1055,25 @@ textarea {
   }
 }
 
+@media (min-width: 1360px) {
+  .garanties__content {
+    padding-left: 0;
+    margin-left: 40px;
+    max-width: 400px;
+  }
+}
+
 @media (min-width: 768px) {
   .garanties__image {
     position: absolute;
     top: 0;
     left: -40px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .garanties__image {
+    position: relative;
   }
 }
 
