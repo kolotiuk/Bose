@@ -439,12 +439,26 @@ textarea {
   }
 }
 
+@media (min-width: 1360px) {
+  .title {
+    font-size: 54px;
+    margin-bottom: 50px;
+  }
+}
+
 .subtitle {
   margin-bottom: 16px;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.25;
   color: #e7e7e7;
+}
+
+@media (min-width: 1360px) {
+  .subtitle {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
 }
 
 .text {
@@ -456,6 +470,13 @@ textarea {
 @media (min-width: 768px) {
   .text {
     font-size: 16px;
+    line-height: 1.45;
+  }
+}
+
+@media (min-width: 1360px) {
+  .text {
+    font-size: 20px;
     line-height: 1.45;
   }
 }
@@ -694,7 +715,7 @@ textarea {
   }
 }
 
-@media (max-width: 1360px) {
+@media (max-width: 1359px) {
   .hero__left {
     max-width: 294px;
   }
@@ -776,12 +797,56 @@ textarea {
   }
 }
 
+@media (min-width: 1360px) {
+  .design__list {
+    max-width: 510px;
+  }
+}
+
 .design__item {
   margin-bottom: 24px;
 }
 
 .design__item:last-child {
   margin-bottom: 32px;
+}
+
+@media (min-width: 1360px) {
+  .design__item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .design__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1360px) {
+  .benefits__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1360px) {
+  .benefits__flex {
+    padding-left: 110px;
+  }
+}
+
+@media (max-width: 1359px) {
+  .benefits__list:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .benefits__list {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
 }
 
 .benefits__item {
@@ -792,7 +857,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 24px;
+  padding-left: 37px;
 }
 
 .benefits__item:not(:last-child) {
@@ -808,6 +873,12 @@ textarea {
   height: 13px;
   background-color: #df3d3a;
   border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .benefits__item:before {
+    top: auto;
+  }
 }
 
 .promo {
