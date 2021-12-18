@@ -1,3 +1,11 @@
+.faq {
+    &__container {
+        @media (min-width: 1360px) {
+            padding: 0 110px;
+        }
+    }
+}
+
 .faq__item {
     padding-bottom: 24px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
@@ -16,9 +24,13 @@ summary {
         content: "0" counter(section);
         margin-right: 16px;
         font-size: 20px;
-        line-height: 70%;
         color: $titlesColorWhite;
         font-family: "Roboto Condensed", sans-serif;
+
+        @media (min-width: 1360px) {
+            font-size: 28px;
+            margin-right: 32px;
+        }
     }
     &:after {
         content: "?";
@@ -33,6 +45,12 @@ summary {
         @media (min-width: 768px) {
             margin-left: auto;
         }
+
+        @media (min-width: 1360px) {
+            font-size: 28px;
+            width: 42px;
+            height: 42px;
+        }
     }
 
     @media (min-width: 768px) {
@@ -43,7 +61,7 @@ summary {
 .faq_subtitle {
     margin-bottom: 0;
 
-    font-size: 14px;
+    // font-size: 14px;
     line-height: 1.25;
     color: $textColorWhiteRgba;
     @media (max-width: 767px) {
@@ -54,4 +72,9 @@ summary {
 .faq__description {
     margin-top: 16px;
     padding-left: 35px;
+
+    @media (min-width: 1360px) {
+        padding-left: 60px;
+        width: 952px;
+    }
 }

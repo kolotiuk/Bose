@@ -1324,6 +1324,12 @@ textarea {
   margin-left: 20px;
 }
 
+@media (min-width: 1360px) {
+  .faq__container {
+    padding: 0 110px;
+  }
+}
+
 .faq__item {
   padding-bottom: 24px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
@@ -1349,9 +1355,15 @@ summary:before {
   content: "0" counter(section);
   margin-right: 16px;
   font-size: 20px;
-  line-height: 70%;
   color: #e7e7e7;
   font-family: "Roboto Condensed", sans-serif;
+}
+
+@media (min-width: 1360px) {
+  summary:before {
+    font-size: 28px;
+    margin-right: 32px;
+  }
 }
 
 summary:after {
@@ -1377,6 +1389,14 @@ summary:after {
   }
 }
 
+@media (min-width: 1360px) {
+  summary:after {
+    font-size: 28px;
+    width: 42px;
+    height: 42px;
+  }
+}
+
 @media (min-width: 768px) {
   summary {
     -webkit-box-pack: start;
@@ -1387,7 +1407,6 @@ summary:after {
 
 .faq_subtitle {
   margin-bottom: 0;
-  font-size: 14px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -1401,6 +1420,13 @@ summary:after {
 .faq__description {
   margin-top: 16px;
   padding-left: 35px;
+}
+
+@media (min-width: 1360px) {
+  .faq__description {
+    padding-left: 60px;
+    width: 952px;
+  }
 }
 
 .order__picture {
