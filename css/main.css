@@ -1110,54 +1110,95 @@ textarea {
   border-radius: 50%;
 }
 
-@media (min-width: 1360px) {
+@media (min-width: 768px) {
   .history__container {
-    max-width: 1360px;
+    max-width: 768px;
     padding: 0;
   }
 }
 
-.history__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-left: 110px;
+@media (min-width: 1360px) {
+  .history__container {
+    max-width: 1360px;
+  }
 }
 
-.history__wrapper:first-child {
-  margin-bottom: 50px;
+@media (min-width: 768px) {
+  .history__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 60px;
+  }
 }
 
-.history__wrapper:last-child {
+@media (min-width: 1360px) {
+  .history__wrapper {
+    padding-left: 110px;
+  }
+}
+
+@media (min-width: 768px) {
+  .history-upper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .history-upper {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .history-upper__content {
+    width: 294px;
+  }
+}
+
+.history-upper__title {
+  max-width: 174px;
+}
+
+@media (min-width: 768px) {
+  .history-upper__text:not(:last-child) {
+    margin-bottom: 16px;
+    max-width: 272px;
+  }
+}
+
+.history-below {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-right: 190px;
 }
 
-.history__wrapper:last-child .history__quote--pre-text {
-  margin-bottom: 89px;
+.history-below__picture {
+  margin-right: 60px;
 }
 
-.history__wrapper:last-child .history__content {
-  width: 510px;
-  margin-right: 0;
+@media (min-width: 768px) {
+  .history-below__content {
+    width: 294px;
+  }
 }
 
-.history__wrapper:last-child .history__quote--text {
+@media (min-width: 768px) {
+  .history-below__quote--pre {
+    margin-bottom: 108px;
+    max-width: 268px;
+  }
+}
+
+.history-below__quote {
   position: relative;
-  margin-bottom: 32px;
-  padding-top: 82px;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 1.25;
   color: #e7e7e7;
 }
 
-.history__wrapper:last-child .history__quote--text:before {
+.history-below__quote:before {
   content: "";
   position: absolute;
   top: 0;
@@ -1169,7 +1210,17 @@ textarea {
   background-repeat: no-repeat;
 }
 
-.history__wrapper:last-child .history__quote--author {
+@media (min-width: 768px) {
+  .history-below__quote {
+    padding-top: 80px;
+    margin-bottom: 32px;
+    max-width: 257px;
+    font-size: 20px;
+    line-height: 125%;
+  }
+}
+
+.history-below__author {
   font-size: 16px;
   line-height: 1;
   color: rgba(255, 255, 255, 0.4);
@@ -1179,6 +1230,19 @@ textarea {
   .history__content {
     width: 400px;
     margin-right: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  .history__title {
+    margin-bottom: 33px;
+    width: 174px;
+  }
+}
+
+@media (min-width: 768px) {
+  .history__text:first-child {
+    margin-bottom: 16px;
   }
 }
 
