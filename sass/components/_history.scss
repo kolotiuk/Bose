@@ -3,6 +3,7 @@
         @media (min-width: 768px) {
             max-width: 768px;
             padding: 0;
+            margin: 0;
         }
 
         @media (min-width: 1360px) {
@@ -35,6 +36,10 @@
             @media (min-width: 768px) {
                 width: 294px;
             }
+
+            @media (min-width: 1360px) {
+                width: 400px;
+            }
         }
 
         &__title {
@@ -45,7 +50,13 @@
             @media (min-width: 768px) {
                 &:not(:last-child) {
                     margin-bottom: 16px;
-                    max-width: 272px;
+                    width: 272px;
+                }
+            }
+
+            @media (min-width: 1360px) {
+                &:not(:last-child) {
+                    width: 400px;
                 }
             }
         }
@@ -54,19 +65,34 @@
     &-below {
         align-items: flex-end;
         &__picture {
-            margin-right: 60px;
+            @media (min-width: 768px) {
+                margin-right: 60px;
+            }
+
+            @media (min-width: 1360px) {
+                margin-right: 260px;
+            }
         }
 
         &__content {
             @media (min-width: 768px) {
                 width: 294px;
             }
+
+            @media (min-width: 1360px) {
+                width: 510px;
+            }
         }
 
         &__quote--pre {
             @media (min-width: 768px) {
                 margin-bottom: 108px;
-                max-width: 268px;
+                width: 268px;
+            }
+
+            @media (min-width: 1360px) {
+                width: 501px;
+                margin-bottom: 89px;
             }
         }
 
@@ -74,6 +100,7 @@
             position: relative;
 
             color: $titlesColorWhite;
+
             &:before {
                 content: "";
                 position: absolute;
@@ -90,10 +117,15 @@
             @media (min-width: 768px) {
                 padding-top: 80px;
                 margin-bottom: 32px;
-                max-width: 257px;
+                width: 257px;
 
                 font-size: 20px;
-                line-height: 125%;
+                line-height: 1.25;
+            }
+
+            @media (min-width: 1360px) {
+                font-size: 28px;
+                width: 359px;
             }
         }
 

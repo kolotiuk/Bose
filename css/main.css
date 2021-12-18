@@ -1114,6 +1114,7 @@ textarea {
   .history__container {
     max-width: 768px;
     padding: 0;
+    margin: 0;
   }
 }
 
@@ -1159,6 +1160,12 @@ textarea {
   }
 }
 
+@media (min-width: 1360px) {
+  .history-upper__content {
+    width: 400px;
+  }
+}
+
 .history-upper__title {
   max-width: 174px;
 }
@@ -1166,7 +1173,13 @@ textarea {
 @media (min-width: 768px) {
   .history-upper__text:not(:last-child) {
     margin-bottom: 16px;
-    max-width: 272px;
+    width: 272px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .history-upper__text:not(:last-child) {
+    width: 400px;
   }
 }
 
@@ -1176,8 +1189,16 @@ textarea {
           align-items: flex-end;
 }
 
-.history-below__picture {
-  margin-right: 60px;
+@media (min-width: 768px) {
+  .history-below__picture {
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .history-below__picture {
+    margin-right: 260px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1186,10 +1207,23 @@ textarea {
   }
 }
 
+@media (min-width: 1360px) {
+  .history-below__content {
+    width: 510px;
+  }
+}
+
 @media (min-width: 768px) {
   .history-below__quote--pre {
     margin-bottom: 108px;
-    max-width: 268px;
+    width: 268px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .history-below__quote--pre {
+    width: 501px;
+    margin-bottom: 89px;
   }
 }
 
@@ -1214,9 +1248,16 @@ textarea {
   .history-below__quote {
     padding-top: 80px;
     margin-bottom: 32px;
-    max-width: 257px;
+    width: 257px;
     font-size: 20px;
-    line-height: 125%;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 1360px) {
+  .history-below__quote {
+    font-size: 28px;
+    width: 359px;
   }
 }
 
