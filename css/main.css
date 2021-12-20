@@ -679,7 +679,7 @@ textarea {
 }
 
 @media (min-width: 768px) {
-  .hero__flex {
+  .hero__container {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -768,7 +768,7 @@ textarea {
 }
 
 @media (min-width: 768px) {
-  .design__container--flex {
+  .design__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
