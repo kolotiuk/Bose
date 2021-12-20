@@ -1,47 +1,51 @@
-.benefits__flex {
-    @media (min-width: 1360px) {
-        display: flex;
-        flex-wrap: wrap;
+.benefits {
+    &__container {
+        @media (min-width: 1360px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        @media (min-width: 1360px) {
+            padding-left: 110px;
+        }
     }
-    @media (min-width: 1360px) {
-        padding-left: 110px;
-    }
-}
 
-.benefits__list {
-    @media (max-width: 1359px) {
+    &__list {
+        @media (max-width: 1359px) {
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+        }
+    
+        @media (min-width: 1360px) {
+            flex-basis: 50%;
+        }
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 37px;
         &:not(:last-child) {
             margin-bottom: 16px;
         }
-    }
-
-    @media (min-width: 1360px) {
-        flex-basis: 50%;
-    }
-}
-
-.benefits__item {
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding-left: 37px;
-    &:not(:last-child) {
-        margin-bottom: 16px;
-    }
-    &:before {
-        content: "";
-        position: absolute;
-        top: 2px;
-        left: 0;
-        width: 13px;
-        height: 13px;
-
-        background-color: $orangeColor;
-        border-radius: 50%;
-    }
-    @media (min-width: 768px) {
         &:before {
-            top: auto;
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width: 13px;
+            height: 13px;
+    
+            background-color: $orangeColor;
+            border-radius: 50%;
+        }
+        @media (min-width: 768px) {
+            &:before {
+                top: auto;
+            }
         }
     }
 }
+
+

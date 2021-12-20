@@ -821,7 +821,7 @@ textarea {
 }
 
 @media (min-width: 1360px) {
-  .benefits__flex {
+  .benefits__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -831,7 +831,7 @@ textarea {
 }
 
 @media (min-width: 1360px) {
-  .benefits__flex {
+  .benefits__container {
     padding-left: 110px;
   }
 }
