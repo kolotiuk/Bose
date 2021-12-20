@@ -17,10 +17,10 @@
             z-index: 3;
         }
     }
-}
 
-.header__logo {
-    z-index: 3;
+    &__logo {
+        z-index: 3;
+    }
 }
 
 .nav {
@@ -31,12 +31,10 @@
     @media (min-width: 1360px) {
         justify-content: space-between;
     }
-}
 
-.nav__menu {
-    @media (min-width: 1360px) {
-        display: flex;
+    &__menu {
+        @media (min-width: 1360px) {
+            display: flex;
+        }
     }
 }
-
-
