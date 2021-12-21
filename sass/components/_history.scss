@@ -46,6 +46,11 @@
         }
 
         &__text {
+            @media (max-width: 767px) {
+                &:last-child {
+                    margin-bottom: 16px;
+                }
+            }
             @media (min-width: 768px) {
                 &:not(:last-child) {
                     margin-bottom: 16px;
@@ -59,11 +64,21 @@
                 }
             }
         }
+
+        &__picture {
+            @media (max-width: 767px) {
+                margin: 32px 0;
+            }
+        }
     }
 
     &-below {
         align-items: flex-end;
         &__picture {
+            @media (max-width: 767px) {
+                margin: 32px 0;
+            }
+
             @media (min-width: 768px) {
                 margin-right: 60px;
             }
@@ -96,7 +111,12 @@
         }
 
         &__quote {
+            margin-bottom: 16px;
+            padding-top: 50px;
             position: relative;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 1.25;
 
             color: $titlesColorWhite;
 
@@ -129,8 +149,8 @@
         }
 
         &__author {
-            font-size: 16px;
-            line-height: 1;
+            font-size: 14px;
+            line-height: 1.25;
             color: rgba(255, 255, 255, 0.4);
         }
     }

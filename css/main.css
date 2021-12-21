@@ -1169,6 +1169,12 @@ textarea {
   max-width: 174px;
 }
 
+@media (max-width: 767px) {
+  .history-upper__text:last-child {
+    margin-bottom: 16px;
+  }
+}
+
 @media (min-width: 768px) {
   .history-upper__text:not(:last-child) {
     margin-bottom: 16px;
@@ -1182,10 +1188,22 @@ textarea {
   }
 }
 
+@media (max-width: 767px) {
+  .history-upper__picture {
+    margin: 32px 0;
+  }
+}
+
 .history-below {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+@media (max-width: 767px) {
+  .history-below__picture {
+    margin: 32px 0;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1227,7 +1245,12 @@ textarea {
 }
 
 .history-below__quote {
+  margin-bottom: 16px;
+  padding-top: 50px;
   position: relative;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.25;
   color: #e7e7e7;
 }
 
@@ -1261,8 +1284,8 @@ textarea {
 }
 
 .history-below__author {
-  font-size: 16px;
-  line-height: 1;
+  font-size: 14px;
+  line-height: 1.25;
   color: rgba(255, 255, 255, 0.4);
 }
 
