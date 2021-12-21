@@ -18,7 +18,9 @@
     }
 
     &__title {
-        width: 400px;
+        @media (min-width: 1360px) {
+            width: 400px;
+        }
     }
 
     &__help {
