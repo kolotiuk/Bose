@@ -65,8 +65,13 @@
 
     &__subtitle {
         font-size: 14px;
-        width: 200px;
         color: rgba(255, 255, 255, 0.8);
+        @media (max-width: 767px) {
+            width: 200px;
+        }
+        @media (min-width: 768px) {
+            font-size: 16px;
+        }
     }
 
     &__description {
@@ -81,4 +86,3 @@
         }
     }
 }
-

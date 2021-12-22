@@ -33,6 +33,11 @@
         &:last-child {
             margin-bottom: 32px;
         }
+        @media (min-width: 768px) {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     
         @media (min-width: 1360px) {
             &:not(:last-child) {

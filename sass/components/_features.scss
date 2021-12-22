@@ -35,5 +35,7 @@
 }
 
 .features__text {
-    margin-bottom: 32px;
+    @media (max-width: 767px) {
+        margin-bottom: 32px;
+    }
 }

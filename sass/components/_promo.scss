@@ -48,8 +48,10 @@
 }
 
 .promo__item {
-    &:not(:last-child) {
-        margin-bottom: 24px;
+    @media (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
     }
 }
 

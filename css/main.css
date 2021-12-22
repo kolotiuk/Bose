@@ -454,6 +454,13 @@ textarea {
   color: #e7e7e7;
 }
 
+@media (min-width: 768px) {
+  .subtitle {
+    font-size: 16px;
+    line-height: 1.45;
+  }
+}
+
 @media (min-width: 1360px) {
   .subtitle {
     font-size: 28px;
@@ -811,6 +818,12 @@ textarea {
   margin-bottom: 32px;
 }
 
+@media (min-width: 768px) {
+  .design__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
 @media (min-width: 1360px) {
   .design__item:not(:last-child) {
     margin-bottom: 40px;
@@ -935,8 +948,10 @@ textarea {
   }
 }
 
-.promo__item:not(:last-child) {
-  margin-bottom: 24px;
+@media (max-width: 767px) {
+  .promo__item:not(:last-child) {
+    margin-bottom: 24px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1019,8 +1034,10 @@ textarea {
   }
 }
 
-.features__text {
-  margin-bottom: 32px;
+@media (max-width: 767px) {
+  .features__text {
+    margin-bottom: 32px;
+  }
 }
 
 .garanties__container {
@@ -1468,8 +1485,19 @@ textarea {
 
 .faq__subtitle {
   font-size: 14px;
-  width: 200px;
   color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 767px) {
+  .faq__subtitle {
+    width: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .faq__subtitle {
+    font-size: 16px;
+  }
 }
 
 .faq__description {
