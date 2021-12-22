@@ -358,7 +358,8 @@ textarea {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 688px;
+    max-width: 768px;
+    padding: 0 60px;
   }
 }
 
@@ -877,12 +878,7 @@ textarea {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-}
-
-@media (min-width: 1440px) {
-  .benefits__container {
-    padding-left: 110px;
+    padding: 0 170px;
   }
 }
 
@@ -967,6 +963,7 @@ textarea {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     width: 100%;
+    max-width: 1440px;
     background-image: url("../images/promo/promo-bg1440.jpg");
     height: 524px;
   }
@@ -1002,7 +999,8 @@ textarea {
 
 @media (min-width: 1440px) {
   .promo__list {
-    margin: 0 -20px;
+    margin: 0 -34px;
+    padding: 0 110px;
   }
 }
 
@@ -1014,54 +1012,56 @@ textarea {
 
 @media (min-width: 1440px) {
   .promo__item {
-    margin: 0 20px;
-  }
-  .promo__item:first-child {
-    padding-left: 110px;
-  }
-  .promo__item:last-child {
-    padding-right: 110px;
+    margin: 0 34px;
   }
 }
 
 @media (min-width: 768px) {
-  .features__container--flex {
+  .features__container {
+    max-width: 768px;
+    padding-right: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: relative;
   }
 }
 
 @media (min-width: 1440px) {
-  .features__container--flex {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+  .features__container {
+    max-width: 1440px;
+  }
+}
+
+@media (min-width: 768px) {
+  .features__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 1440px) {
+  .features__wrap {
+    padding-left: 110px;
   }
 }
 
 @media (min-width: 768px) {
   .features__content {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    padding-right: 47px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 271px;
+            flex: 0 0 271px;
   }
 }
 
 @media (min-width: 1440px) {
   .features__content {
-    max-width: 380px;
-    margin-left: 110px;
-    margin-right: 90px;
-  }
-}
-
-@media (min-width: 768px) {
-  .features__image {
-    position: absolute;
-    top: 0;
-    right: -40px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 380px;
+            flex: 0 0 380px;
   }
 }
 

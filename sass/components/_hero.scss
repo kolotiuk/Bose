@@ -43,19 +43,8 @@
     }
 
     &__left {
-        @media (min-width: 768px) {
-            // margin-right: 60px;
-        }
         @media (max-width: 1439px) {
             max-width: 294px;
-        }
-    }
-
-    &__right {
-        @media (min-width: 768px) {
-            // position: absolute;
-            // top: 0;
-            // right: -40px;
         }
     }
 

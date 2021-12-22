@@ -28,6 +28,7 @@
             left: 50%;
             transform: translateX(-50%);
             width: 100%;
+            max-width: 1440px;
             @include bg-img(
                 "../images/promo/promo-bg1440.jpg"
             );
@@ -62,7 +63,8 @@
     }
 
     @media (min-width: 1440px) {
-        margin: 0 -20px;
+        margin: 0 -34px;
+        padding: 0 110px;
     }
 }
 
@@ -72,13 +74,14 @@
     }
 
     @media (min-width: 1440px) {
-        margin: 0 20px;
+        // margin: 0 20px;
+        margin: 0 34px;
 
-        &:first-child {
-            padding-left: 110px;
-        }
-        &:last-child {
-            padding-right: 110px;
-        }
+        // &:first-child {
+        //     padding-left: 110px;
+        // }
+        // &:last-child {
+        //     padding-right: 110px;
+        // }
     }
 }
