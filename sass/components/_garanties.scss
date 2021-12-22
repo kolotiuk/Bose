@@ -1,4 +1,17 @@
-.garanties__container--flex {
+.garanties__container {
+    position: relative;
+    @media (min-width: 1360px) {
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: -20px;
+            width: 260px;
+            height: 111px;
+    
+            background-image: url(../images/history/Union-desktop.svg);
+        }
+    }
     @media (min-width: 768px) {
         display: flex;
         position: relative;
@@ -37,17 +50,11 @@
     }
 }
 
-.garanties__title {
-    margin-bottom: 56px;
-    @media (min-width: 768px) {
-        margin-bottom: 80px;
-    }
-}
-
 .garanties__item {
     position: relative;
+    padding-top: 40px;
     &:first-child {
-        margin-bottom: 61px;
+        margin-bottom: 24px;
     }
     &:last-child {
         margin-bottom: 32px;
@@ -55,12 +62,27 @@
     &:before {
         content: "";
         position: absolute;
-        top: -24px;
+        top: 0;
         left: 0;
         width: 13px;
         height: 13px;
 
         background-color: $orangeColor;
         border-radius: 50%;
+    }
+
+    @media (min-width: 768px) {
+        &:first-child {
+            margin-bottom: 32px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @media (min-width: 1360px) {
+        &:first-child {
+            margin-bottom: 61px;
+        }
     }
 }

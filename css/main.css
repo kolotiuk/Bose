@@ -1023,8 +1023,24 @@ textarea {
   margin-bottom: 32px;
 }
 
+.garanties__container {
+  position: relative;
+}
+
+@media (min-width: 1360px) {
+  .garanties__container:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    width: 260px;
+    height: 111px;
+    background-image: url(../images/history/Union-desktop.svg);
+  }
+}
+
 @media (min-width: 768px) {
-  .garanties__container--flex {
+  .garanties__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1036,7 +1052,7 @@ textarea {
 }
 
 @media (min-width: 1360px) {
-  .garanties__container--flex {
+  .garanties__container {
     max-width: 1360px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1077,22 +1093,13 @@ textarea {
   }
 }
 
-.garanties__title {
-  margin-bottom: 56px;
-}
-
-@media (min-width: 768px) {
-  .garanties__title {
-    margin-bottom: 80px;
-  }
-}
-
 .garanties__item {
   position: relative;
+  padding-top: 40px;
 }
 
 .garanties__item:first-child {
-  margin-bottom: 61px;
+  margin-bottom: 24px;
 }
 
 .garanties__item:last-child {
@@ -1102,12 +1109,27 @@ textarea {
 .garanties__item:before {
   content: "";
   position: absolute;
-  top: -24px;
+  top: 0;
   left: 0;
   width: 13px;
   height: 13px;
   background-color: #df3d3a;
   border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .garanties__item:first-child {
+    margin-bottom: 32px;
+  }
+  .garanties__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1360px) {
+  .garanties__item:first-child {
+    margin-bottom: 61px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1135,6 +1157,22 @@ textarea {
 @media (min-width: 1360px) {
   .history__wrapper {
     padding-left: 110px;
+  }
+}
+
+.history-upper {
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .history-upper:after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 116px;
+    height: 82px;
+    background-image: url(../images/history/Union.svg);
   }
 }
 

@@ -22,6 +22,28 @@
     }
 
     &-upper {
+        position: relative;
+
+        &:after {
+            @media (max-width: 767px) {
+                content: "";
+                position: absolute;
+                right: -20px;
+                top: 0;
+                width: 116px;
+                height: 82px;
+    
+                background-image: url(../images/history/Union.svg);
+            }
+            // @media (min-width: 1360px) {
+            //     display: block;
+            //     width: 260px;
+            //     height: 111px;
+
+            //     background-image: url(../images/history/Union-desktop.svg);
+            // }
+        }
+
         @media (min-width: 768px) {
             justify-content: space-between;
             margin-bottom: 32px;
