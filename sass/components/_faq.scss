@@ -6,7 +6,6 @@
     }
 
     &__item {
-        padding-bottom: 24px;
         border-bottom: 2px solid rgba(255, 255, 255, 0.2);
         &:not(:last-child) {
             margin-bottom: 24px;
@@ -15,9 +14,11 @@
 
     &__summary {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
+        padding-bottom: 24px;
         list-style: none;
         position: relative;
+        cursor: pointer;
 
         &:before {
             counter-increment: section;
@@ -35,11 +36,14 @@
 
         &:after {
             content: "?";
+            flex-shrink: 0;
             width: 32px;
             height: 32px;
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-left: auto;
+
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
 
@@ -59,9 +63,16 @@
         }
     }
 
+    &__subtitle {
+        font-size: 14px;
+        width: 200px;
+    }
+
     &__description {
         margin-top: 16px;
         padding-left: 35px;
+        padding-right: 35px;
+        padding-bottom: 24px;
 
         @media (min-width: 1360px) {
             padding-left: 60px;

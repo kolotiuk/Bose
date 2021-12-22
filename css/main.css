@@ -1391,7 +1391,6 @@ textarea {
 }
 
 .faq__item {
-  padding-bottom: 24px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -1403,11 +1402,10 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding-bottom: 24px;
   list-style: none;
   position: relative;
+  cursor: pointer;
 }
 
 .faq__summary:before {
@@ -1428,6 +1426,8 @@ textarea {
 
 .faq__summary:after {
   content: "?";
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   width: 32px;
   height: 32px;
   display: -webkit-box;
@@ -1439,6 +1439,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: auto;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
@@ -1465,9 +1466,16 @@ textarea {
   }
 }
 
+.faq__subtitle {
+  font-size: 14px;
+  width: 200px;
+}
+
 .faq__description {
   margin-top: 16px;
   padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 24px;
 }
 
 @media (min-width: 1360px) {
