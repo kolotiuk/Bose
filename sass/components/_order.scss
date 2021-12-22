@@ -1,7 +1,29 @@
+.order {
+    &__container {
+        @media (min-width: 1440px) {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 190px;
+            padding-right: 0;
+        }
+    }
 
+    &__left {
+        @media (min-width: 1440px) {
+            font: 0 0 400px;
+        }
+    }
+
+    &__right {
+        @media (max-width: 1439px) {
+            margin-top: 32px;
+        }
+    }
+}
 .order__picture {
-    display: block;
-    margin-bottom: 32px;
+    @media (max-width: 1439px) {
+        margin-bottom: 32px;
+    }
 }
 
 .btn__circle {

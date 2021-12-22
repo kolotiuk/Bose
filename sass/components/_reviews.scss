@@ -32,12 +32,6 @@
             margin-left: auto;
         }
     }
-
-    // &_title [
-    //     @media (max-width: 1439) {
-    //         margin-bottom: 0;
-    //     }
-    // ]
 }
 
 .reviews__title {
@@ -47,7 +41,6 @@
 }
 
 .reviews__video {
-    // width: 100%;
     @media (max-width: 1439px) {
         margin-bottom: 32px;
         margin-top: 0;
