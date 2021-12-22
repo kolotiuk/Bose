@@ -7,10 +7,18 @@
         padding-top: 48px;
     }
 
-    &__container{
+    &__container {
         @media (min-width: 768px) {
-            position: relative;
+            max-width: 768px;
+            padding-right: 0;
+            padding-left: 60px;
             display: flex;
+            justify-content: space-between;
+        }
+        @media (min-width: 1360px) {
+            max-width: 1360px;
+            padding-left: 40px;
+            padding-right: 0;
         }
     }
 
@@ -38,7 +46,7 @@
 
     &__left {
         @media (min-width: 768px) {
-            margin-right: 60px;
+            // margin-right: 60px;
         }
         @media (max-width: 1359px) {
             max-width: 294px;
@@ -47,9 +55,9 @@
 
     &__right {
         @media (min-width: 768px) {
-            position: absolute;
-            top: 0;
-            right: -40px;
+            // position: absolute;
+            // top: 0;
+            // right: -40px;
         }
     }
 
@@ -88,4 +96,3 @@
         }
     }
 }
-

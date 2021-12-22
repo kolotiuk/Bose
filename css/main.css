@@ -689,10 +689,23 @@ textarea {
 
 @media (min-width: 768px) {
   .hero__container {
-    position: relative;
+    max-width: 768px;
+    padding-right: 0;
+    padding-left: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 1360px) {
+  .hero__container {
+    max-width: 1360px;
+    padding-left: 40px;
+    padding-right: 0;
   }
 }
 
@@ -723,23 +736,9 @@ textarea {
   }
 }
 
-@media (min-width: 768px) {
-  .hero__left {
-    margin-right: 60px;
-  }
-}
-
 @media (max-width: 1359px) {
   .hero__left {
     max-width: 294px;
-  }
-}
-
-@media (min-width: 768px) {
-  .hero__right {
-    position: absolute;
-    top: 0;
-    right: -40px;
   }
 }
 
