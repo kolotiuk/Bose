@@ -103,11 +103,11 @@
 
         &__content {
             @media (min-width: 768px) {
-                width: 294px;
+                flex: 0 0 294px;
             }
 
             @media (min-width: 1440px) {
-                width: 510px;
+                flex: 0 0 510px;
             }
         }
 

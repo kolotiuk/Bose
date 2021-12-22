@@ -1290,13 +1290,17 @@ textarea {
 
 @media (min-width: 768px) {
   .history-below__content {
-    width: 294px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 294px;
+            flex: 0 0 294px;
   }
 }
 
 @media (min-width: 1440px) {
   .history-below__content {
-    width: 510px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 510px;
+            flex: 0 0 510px;
   }
 }
 
@@ -1379,9 +1383,63 @@ textarea {
   }
 }
 
-.reviews__poster {
+@media (min-width: 1440px) {
+  .reviews__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .reviews__left {
+    height: 417px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .reviews__left {
+    margin-top: 32px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .reviews__left {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 920px;
+            flex: 0 0 920px;
+    height: 590px;
+    margin-bottom: 0;
+  }
+}
+
+.reviews__video {
   width: 100%;
-  margin-bottom: 32px;
+  height: 100%;
+}
+
+@media (min-width: 1440px) {
+  .reviews__right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 290px;
+            flex: 0 0 290px;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 1439px) {
+  .reviews__title {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1439px) {
+  .reviews__video {
+    margin-bottom: 32px;
+    margin-top: 0;
+  }
 }
 
 .reviews__subtitle {
@@ -1390,6 +1448,18 @@ textarea {
 
 .reviews__text {
   margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .reviews__text {
+    max-width: 530px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .reviews__text {
+    margin-bottom: 70px;
+  }
 }
 
 .reviews__list {
@@ -1402,9 +1472,9 @@ textarea {
   position: relative;
   margin-bottom: 0;
   margin-right: 14px;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   color: #df3d3a;
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .reviews__item.current {
@@ -1412,7 +1482,7 @@ textarea {
 }
 
 .reviews__item:not(:last-child):after {
-  content: '-';
+  content: "-";
   margin-left: 20px;
 }
 
