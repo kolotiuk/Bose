@@ -1,5 +1,5 @@
 .burger {
-    @media (max-width: 1359px) {
+    @media (max-width: 1439px) {
         width: 32px;
         margin-left: auto;
         background: none;
@@ -11,7 +11,7 @@
             }
         }
     }
-    @media (min-width: 1360px) {
+    @media (min-width: 1440px) {
         display: none;
     }
 }
@@ -39,7 +39,7 @@
 }
 
 .burger ~ .nav__menu {
-    @media (max-width: 1359px) {
+    @media (max-width: 1439px) {
         position: fixed;
         top: 0;
         left: 0;
@@ -78,12 +78,12 @@
 }
 
 .nav__item {
-    @media (max-width: 1359px) {
+    @media (max-width: 1439px) {
         &:not(:last-child) {
             // margin-bottom: 24px;
         }
     }
-    @media (min-width: 1360px) {
+    @media (min-width: 1440px) {
         &:not(:last-child) {
             margin-right: 77px;
         }
@@ -95,7 +95,7 @@
     font-size: 14px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.8);
-    @media (max-width: 1359px) {
+    @media (max-width: 1439px) {
         display: inline-block;
         padding: 12px 12px 12px 0;
     }

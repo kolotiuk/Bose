@@ -69,8 +69,9 @@ textarea {
         max-width: 688px;
     }
 
-    @media (min-width: 1360px) {
-        max-width: 1320px;
+    @media (min-width: 1440px) {
+        max-width: 1440px;
+        padding: 0 80px;
     }
 }
 
@@ -79,7 +80,7 @@ textarea {
     @media (min-width: 768px) {
         padding: 50px 0 50px;
     }
-    @media (min-width: 1360px) {
+    @media (min-width: 1440px) {
         padding: 85px 0 85px;
     }
 }
@@ -112,7 +113,7 @@ textarea {
         margin-bottom: 0;
     }
 
-    @media (min-width: 1360px) {
+    @media (min-width: 1440px) {
         min-width: 290px;
         height: 68px;
 
@@ -135,7 +136,7 @@ textarea {
         font-size: 30px;
     }
 
-    @media (min-width: 1360px) {
+    @media (min-width: 1440px) {
         font-size: 54px;
         margin-bottom: 50px;
     }
@@ -153,7 +154,7 @@ textarea {
         line-height: 1.45;
     }
 
-    @media (min-width: 1360px) {
+    @media (min-width: 1440px) {
         font-size: 28px;
         margin-bottom: 20px;
     }
@@ -168,7 +169,7 @@ textarea {
         line-height: 1.45;
     }
 
-    @media (min-width: 1360px) {
+    @media (min-width: 1440px) {
         font-size: 20px;
         line-height: 1.45;
     }

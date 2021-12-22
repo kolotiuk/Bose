@@ -23,7 +23,7 @@
                 "../images/promo/promo-bg768.jpg"
             );
         }
-        @media (min-width: 1360px) {
+        @media (min-width: 1440px) {
             top: 185px;
             left: 50%;
             transform: translateX(-50%);
@@ -42,7 +42,7 @@
         margin-bottom: 357px;
         text-align: right;
     }
-    @media (min-width: 1360px) {
+    @media (min-width: 1440px) {
         margin-bottom: 624px;
     }
 }
@@ -61,7 +61,7 @@
         margin: 0 -30px;
     }
 
-    @media (min-width: 1360px) {
+    @media (min-width: 1440px) {
         margin: 0 -20px;
     }
 }
@@ -71,7 +71,7 @@
         margin: 0 30px;
     }
 
-    @media (min-width: 1360px) {
+    @media (min-width: 1440px) {
         margin: 0 20px;
 
         &:first-child {

@@ -1,6 +1,6 @@
 .faq {
     &__container {
-        @media (min-width: 1360px) {
+        @media (min-width: 1440px) {
             padding: 0 110px;
         }
     }
@@ -28,7 +28,7 @@
             color: $titlesColorWhite;
             font-family: "Roboto Condensed", sans-serif;
 
-            @media (min-width: 1360px) {
+            @media (min-width: 1440px) {
                 font-size: 28px;
                 margin-right: 32px;
             }
@@ -51,7 +51,7 @@
                 margin-left: auto;
             }
 
-            @media (min-width: 1360px) {
+            @media (min-width: 1440px) {
                 font-size: 28px;
                 width: 42px;
                 height: 42px;
@@ -80,7 +80,7 @@
         padding-right: 35px;
         padding-bottom: 24px;
 
-        @media (min-width: 1360px) {
+        @media (min-width: 1440px) {
             padding-left: 60px;
             width: 952px;
         }

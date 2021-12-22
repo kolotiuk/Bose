@@ -9,7 +9,7 @@
     }
 
     &__wrapper {
-        @media (min-width: 1360px) {
+        @media (min-width: 1440px) {
             display: flex;
             justify-content: space-between;
             padding: 0 110px;
@@ -18,7 +18,7 @@
     }
 
     &__title {
-        @media (min-width: 1360px) {
+        @media (min-width: 1440px) {
             width: 400px;
         }
     }
@@ -33,7 +33,7 @@
             margin-bottom: 52px;
         }
 
-        @media (min-width: 1360px) {
+        @media (min-width: 1440px) {
             width: 400px;
             font-weight: 600;
             font-size: 28px;
@@ -43,7 +43,7 @@
     }
 
     &__form {
-        @media (min-width: 1360px) {
+        @media (min-width: 1440px) {
             width: 510px;
         }
     }
@@ -97,7 +97,7 @@
             }
         }
 
-        @media (min-width: 1360px) {
+        @media (min-width: 1440px) {
             + span {
                 font-size: 20px;
             }
@@ -135,7 +135,7 @@
             margin-bottom: 52px;
         }
 
-        @media (min-width: 1360px) {
+        @media (min-width: 1440px) {
             font-size: 16px;
             margin-bottom: 89px;
         }
@@ -165,7 +165,7 @@
     &__btn {
         background-color: transparent;
 
-        @media (min-width: 1360px) {
+        @media (min-width: 1440px) {
             width: 100%;
         }
     }
