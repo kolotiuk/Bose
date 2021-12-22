@@ -1469,6 +1469,7 @@ textarea {
 .faq__subtitle {
   font-size: 14px;
   width: 200px;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .faq__description {
@@ -1687,6 +1688,11 @@ textarea {
   .feedback__input + span, .feedback__textarea + span {
     font-size: 20px;
   }
+}
+
+.feedback__input:not(:placeholder-shown) + span, .feedback__textarea:not(:placeholder-shown) + span {
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
 }
 
 .feedback__input {
