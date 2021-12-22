@@ -553,6 +553,7 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 0;
   }
 }
 
@@ -704,9 +705,7 @@ textarea {
 
 @media (min-width: 1440px) {
   .hero__container {
-    max-width: 1360px;
-    padding-left: 40px;
-    padding-right: 0;
+    max-width: 1440px;
   }
 }
 
