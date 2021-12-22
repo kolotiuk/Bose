@@ -1,12 +1,7 @@
 .features__container {
     @media (min-width: 768px) {
-        max-width: 768px;
         padding-right: 0;
         display: flex;
-    }
-
-    @media (min-width: 1440px) {
-        max-width: 1440px;
     }
 }
 

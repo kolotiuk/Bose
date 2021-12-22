@@ -786,14 +786,7 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 768px;
     padding-left: 0;
-  }
-}
-
-@media (min-width: 1440px) {
-  .design__container {
-    max-width: 1440px;
   }
 }
 
@@ -1018,17 +1011,10 @@ textarea {
 
 @media (min-width: 768px) {
   .features__container {
-    max-width: 768px;
     padding-right: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-}
-
-@media (min-width: 1440px) {
-  .features__container {
-    max-width: 1440px;
   }
 }
 
@@ -1081,7 +1067,24 @@ textarea {
   position: relative;
 }
 
+@media (min-width: 768px) {
+  .garanties__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 0;
+  }
+}
+
 @media (min-width: 1440px) {
+  .garanties__container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
   .garanties__container:after {
     content: "";
     position: absolute;
@@ -1094,56 +1097,27 @@ textarea {
 }
 
 @media (min-width: 768px) {
-  .garanties__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-}
-
-@media (min-width: 1440px) {
-  .garanties__container {
-    max-width: 1360px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-}
-
-@media (min-width: 768px) {
   .garanties__content {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 294px;
+            flex: 0 0 294px;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    padding-left: 24px;
   }
 }
 
 @media (min-width: 1440px) {
   .garanties__content {
-    padding-left: 0;
-    margin-left: 40px;
-    max-width: 400px;
-  }
-}
-
-@media (min-width: 768px) {
-  .garanties__image {
-    position: absolute;
-    top: 0;
-    left: -40px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 380px;
+            flex: 0 0 380px;
   }
 }
 
 @media (min-width: 1440px) {
   .garanties__image {
-    position: relative;
+    margin-right: 150px;
   }
 }
 
@@ -1181,8 +1155,8 @@ textarea {
 }
 
 @media (min-width: 1440px) {
-  .garanties__item:first-child {
-    margin-bottom: 61px;
+  .garanties__item:not(:last-child) {
+    margin-bottom: 40px;
   }
 }
 
