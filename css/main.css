@@ -712,6 +712,11 @@ textarea {
 }
 
 @media (min-width: 1360px) {
+  .hero__description {
+    max-width: 321px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
   .hero__description:not(:first-child) {
     margin-top: 36px;
     margin-bottom: 110px;
@@ -764,7 +769,7 @@ textarea {
 
 @media (min-width: 1360px) {
   .hero__title {
-    margin-bottom: 81px;
+    margin-bottom: 70px;
     font-size: 74px;
     line-height: 1;
   }
