@@ -1162,14 +1162,21 @@ textarea {
 
 @media (min-width: 768px) {
   .history__container {
-    max-width: 768px;
-    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 0;
   }
 }
 
 @media (min-width: 1440px) {
   .history__container {
-    max-width: 1360px;
+    padding-right: 0;
+    padding-left: 190px;
   }
 }
 
@@ -1178,13 +1185,6 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-left: 60px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .history__wrapper {
-    padding-left: 110px;
   }
 }
 
@@ -1221,13 +1221,17 @@ textarea {
 
 @media (min-width: 768px) {
   .history-upper__content {
-    width: 294px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 294px;
+            flex: 0 0 294px;
   }
 }
 
 @media (min-width: 1440px) {
   .history-upper__content {
-    width: 400px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 400px;
+            flex: 0 0 400px;
   }
 }
 
