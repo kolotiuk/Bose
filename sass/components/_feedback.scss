@@ -1,10 +1,27 @@
 .feedback {
+    @media (min-width: 1440px) {
+        &:before {
+            content: '';
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 170px;
+            max-width: 1440px;
+            height: 524px;
+            background-image: url(../../images/feedback/feedback-img1440.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
     &__picture {
         margin-bottom: 52px;
         display: block;
 
         @media (min-width: 768px) {
             margin-bottom: 100px;
+        }
+        @media (min-width: 1440px) {
+            display: none;
         }
     }
 
