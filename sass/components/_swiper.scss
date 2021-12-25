@@ -9,6 +9,7 @@
 .swiper-pagination-horizontal.swiper-pagination-bullets
     .swiper-pagination-bullet {
     margin-right: 16px;
+    transition: all 350ms $cubic-bezier;
 
     &:not(:first-child) {
         margin-left: 12px;
