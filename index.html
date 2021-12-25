@@ -278,30 +278,77 @@
 
         <section class="section reviews">
             <div class="reviews__container container">
-                <div class="reviews__left" data-da="reviews__title,1439">
-                    <iframe class="reviews__video" width="280" height="180"
-                        src="https://www.youtube.com/embed/VqP11Ma_2Fk?controls=0" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-                <div class="reviews__right">
-                    <h2 class="reviews__title title">обзоры</h2>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="reviews__left">
+                                <iframe class="reviews__video" width="280" height="180"
+                                    src="https://www.youtube.com/embed/VqP11Ma_2Fk?controls=0"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="reviews__right">
+                                <h2 class="reviews__title title">обзоры</h2>
 
-                    <div class="subtitle reviews__subtitle">
-                        Bose Сorporation
+                                <div class="subtitle reviews__subtitle">
+                                    Bose Сorporation
+                                </div>
+                                <div class="reviews__text text">
+                                    Critically acclaimed for their powerful noise cancelling, astonishing sound, and
+                                    unrivaled voice
+                                    pickup, Bose Noise Cancelling Headphones 700 help turn any space into the perfect
+                                    place to
+                                    listen to music, get work done, or just shut out the world for a few moments and
+                                    relax
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__left">
+                                <iframe class="reviews__video" width="280" height="180"
+                                    src="https://www.youtube.com/embed/BUyLpf-u97Y" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="reviews__right">
+                                <h2 class="reviews__title title">обзоры</h2>
+
+                                <div class="subtitle reviews__subtitle">
+                                    Bose Сorporation
+                                </div>
+                                <div class="reviews__text text">
+                                    Bose Noise Cancelling Headphones 700 deliver everything you expect — and things you
+                                    never imagined possible. The perfect balance of quiet, comfort, and sound.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__left">
+                                <iframe class="reviews__video" width="280" height="180"
+                                    src="https://www.youtube.com/embed/NgtznBDFRUo" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="reviews__right">
+                                <h2 class="reviews__title title">обзоры</h2>
+
+                                <div class="subtitle reviews__subtitle">
+                                    Bose Сorporation
+                                </div>
+                                <div class="reviews__text text">
+                                    Real stories of people tuning in or out to feel peace, find escape, and for
+                                    self-care
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="reviews__text text">
-                        Critically acclaimed for their powerful noise cancelling, astonishing sound, and unrivaled voice
-                        pickup, Bose Noise Cancelling Headphones 700 help turn any space into the perfect place to
-                        listen to music, get work done, or just shut out the world for a few moments and relax
-                    </div>
-                    <ul class="reviews__list">
-                        <li class="subtitle reviews__item current">01</li>
-                        <li class="subtitle reviews__item">02</li>
-                        <li class="subtitle reviews__item">03</li>
-                        <li class="subtitle reviews__item">04</li>
-                    </ul>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -516,8 +563,11 @@
         </div>
     </div>
 
+
     <script src="./js/dynamic-adaptiv.js"></script>
     <script src="./js/burger.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 

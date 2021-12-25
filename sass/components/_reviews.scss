@@ -1,5 +1,6 @@
 .reviews {
     &__container {
+        position: relative;
         @media (min-width: 1440px) {
             display: flex;
             padding-left: 0;
@@ -12,7 +13,7 @@
             margin-bottom: 32px;
         }
         @media (max-width: 1439px) {
-            margin-top: 32px;
+            margin-top: 55px;
         }
         @media (min-width: 1440px) {
             flex: 0 0 920px;
@@ -36,7 +37,10 @@
 
 .reviews__title {
     @media (max-width: 1439px) {
-        margin-bottom: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 32px;
     }
 }
 
