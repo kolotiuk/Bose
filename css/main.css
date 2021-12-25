@@ -1425,14 +1425,19 @@ textarea {
 }
 
 .header {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 32px 0 30px;
+  height: 81px;
+  background-color: #191919;
+  z-index: 10;
 }
 
 @media (max-width: 1439px) {
+  .header {
+    height: 70px;
+  }
   .header:before {
     content: "";
     position: absolute;
@@ -1443,6 +1448,14 @@ textarea {
     background-color: #191919;
     z-index: 3;
   }
+}
+
+.header__container {
+  height: 100%;
+}
+
+.header__container .nav {
+  height: inherit;
 }
 
 .header__logo {
@@ -1597,15 +1610,21 @@ textarea {
   }
 }
 
+@media (min-width: 320px) {
+  .hero {
+    padding-top: calc(19px + 70px);
+  }
+}
+
 @media (min-width: 768px) {
   .hero {
-    padding-top: 19px;
+    padding-top: calc(19px + 70px);
   }
 }
 
 @media (min-width: 1440px) {
   .hero {
-    padding-top: 48px;
+    padding-top: calc(48px + 81px);
   }
 }
 

@@ -1,11 +1,16 @@
 .header {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 32px 0 30px;
+    height: 81px;
+
+    background-color: $mainBgColor;
+
+    z-index: 10;
 
     @media (max-width: 1439px) {
+        height: 70px;
         &:before {
             content: "";
             position: absolute;
@@ -15,6 +20,13 @@
             height: 100%;
             background-color: $mainBgColor;
             z-index: 3;
+        }
+    }
+
+    &__container {
+        height: 100%;
+        .nav {
+            height: inherit;
         }
     }
 
