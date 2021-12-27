@@ -1,77 +1,79 @@
-.garanties__container {
-    position: relative;
-    @media (min-width: 768px) {
-        display: flex;
-        justify-content: space-between;
-        padding-left: 0;
-    }
+.garanties {
+    &__container {
+        position: relative;
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 0;
+        }
 
-    @media (min-width: 1440px) {
-        justify-content: start;
+        @media (min-width: 1440px) {
+            justify-content: start;
 
-        &:after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            right: -20px;
-            width: 260px;
-            height: 111px;
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                right: -20px;
+                width: 260px;
+                height: 111px;
 
-            background-image: url(../images/history/Union-desktop.svg);
+                background-image: url(../images/history/Union-desktop.svg);
+            }
         }
     }
-}
 
-.garanties__content {
-    @media (min-width: 768px) {
-        flex: 0 0 294px;
-        order: 1;
+    &__content {
+        @media (min-width: 768px) {
+            flex: 0 0 294px;
+            order: 1;
+        }
+
+        @media (min-width: 1440px) {
+            flex: 0 0 380px;
+        }
     }
 
-    @media (min-width: 1440px) {
-        flex: 0 0 380px;
-    }
-}
-
-.garanties__image {
-    @media (min-width: 1440px) {
-        margin-right: 150px;
-    }
-}
-
-.garanties__item {
-    position: relative;
-    padding-top: 40px;
-    &:first-child {
-        margin-bottom: 24px;
-    }
-    &:last-child {
-        margin-bottom: 32px;
-    }
-    &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 13px;
-        height: 13px;
-
-        background-color: $orangeColor;
-        border-radius: 50%;
+    &__image {
+        @media (min-width: 1440px) {
+            margin-right: 150px;
+        }
     }
 
-    @media (min-width: 768px) {
+    &__item {
+        position: relative;
+        padding-top: 40px;
         &:first-child {
-            margin-bottom: 32px;
+            margin-bottom: 24px;
         }
         &:last-child {
-            margin-bottom: 0;
+            margin-bottom: 32px;
         }
-    }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 13px;
+            height: 13px;
 
-    @media (min-width: 1440px) {
-        &:not(:last-child) {
-            margin-bottom: 40px;
+            background-color: $orangeColor;
+            border-radius: 50%;
+        }
+
+        @media (min-width: 768px) {
+            &:first-child {
+                margin-bottom: 32px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        @media (min-width: 1440px) {
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
         }
     }
 }
